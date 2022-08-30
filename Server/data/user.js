@@ -1,17 +1,18 @@
- const mongoose = require('mongoose')
+const mongoose = require('mongoose')
 
 
- let  Pro= mongoose.Schema({
-pro_name:String,
-pro_img:[String]
-,
-categeory:String,
-sub_cat: String,
-price: Number,
-reviwes:[Object],
-pro_det:String,
-pro_dis: String,
+let  User= mongoose.Schema({
+   email:String,
+   name: String,
+   password: String,
+   mobile: Number,
+   dateofbirth: Date,
+   address:[Object],
+   preference:[String],
+   wishlist:[Object],
+   cart:[Object],
+orders:[Object]
 
- })
-const Products=mongoose.model('User',Pro)
-module.exports=Products
+})
+const Users=mongoose.model('User',User)
+module.exports=Users
