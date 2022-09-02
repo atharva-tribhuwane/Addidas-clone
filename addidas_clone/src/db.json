@@ -1,0 +1,15 @@
+{
+    "products":[
+        {
+            "id":1,
+            "name":"MVD v3",
+            "product_img":[],
+            "original_price":"",
+            "discounted_price":"",
+            "category":"",
+            "sub_category":"",
+            "rating":"",
+            "product_type":""
+        }
+    ]
+}

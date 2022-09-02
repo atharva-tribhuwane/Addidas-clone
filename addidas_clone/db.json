@@ -1,0 +1,281 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "MVD v3",
+      "product_img": [],
+      "original_price": "",
+      "discounted_price": "",
+      "category": "",
+      "sub_category": "",
+      "rating": "",
+      "product_type": ""
+    },
+    {
+      "name": "Supernova 2Running Shoes",
+      "product_img": [
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/a492af164e53479988aeae2b004fe0b9_9366/Supernova_2_Running_Shoes_Green_GW9092_01_standard.jpg",
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/0bbde8a74caa42a3a076ae2b004ff0cb_9366/Supernova_2_Running_Shoes_Green_GW9092_02_standard_hover.jpg"
+      ],
+      "original_price": "9999",
+      "discounted_price": "null",
+      "category": "Mens",
+      "sub_category": "Running",
+      "rating": 4.2,
+      "product_type": "Footwear",
+      "id": 2
+    },
+    {
+      "name": "Supernova 2Running Shoes",
+      "product_img": [
+        "hhttps://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/f45f6c7743314d6a903bae2901360e85_9366/Supernova_2_Running_Shoes_Grey_GW9093_01_standard.jpg",
+        "hhttps://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/985c64513d1043fda056ae2901361e61_9366/Supernova_2_Running_Shoes_Grey_GW9093_02_standard_hover.jpg"
+      ],
+      "original_price": "9999",
+      "discounted_price": "null",
+      "category": "Mens",
+      "sub_category": "Running",
+      "rating": 4.4,
+      "product_type": "Footwear",
+      "id": 3
+    },
+    {
+      "name": "ACCELAR  SHOES",
+      "product_img": [
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/6e64e33e6d6744719100aeb700f5cf53_9366/ACCELAR_SHOES_Black_GA1142_01_standard.jpg",
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b6de5a46be9e44ad9006aeb700f5c43a_9366/ACCELAR_SHOES_Black_GA1142_02_standard_hover.jpg"
+      ],
+      "original_price": "3999",
+      "discounted_price": "2399",
+      "category": "Mens",
+      "sub_category": "Running",
+      "rating": 4.5,
+      "product_type": "Footwear",
+      "id": 4
+    },
+    {
+      "name": "ACCELAR  SHOES",
+      "product_img": [
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/68ac43496f214fb5b203ad79008a26e0_9366/EQ21_Run_Shoes_Grey_GZ0602_01_standard.jpg",
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/68ac43496f214fb5b203ad79008a26e0_9366/EQ21_Run_Shoes_Grey_GZ0602_01_standard.jpg"
+      ],
+      "original_price": "7999",
+      "discounted_price": "3999",
+      "category": "Mens",
+      "sub_category": "Running",
+      "rating": 3.9,
+      "product_type": "Footwear",
+      "id": 5
+    },
+    {
+      "name": "EQ21 RUN SHOES",
+      "product_img": [
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/68ac43496f214fb5b203ad79008a26e0_9366/EQ21_Run_Shoes_Grey_GZ0602_01_standard.jpg",
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/68ac43496f214fb5b203ad79008a26e0_9366/EQ21_Run_Shoes_Grey_GZ0602_01_standard.jpg"
+      ],
+      "original_price": "7999",
+      "discounted_price": "3999",
+      "category": "Mens",
+      "sub_category": "Running",
+      "rating": 3.9,
+      "product_type": "Footwear",
+      "id": 6
+    },
+    {
+      "name": "EQ21 RUN SHOES",
+      "product_img": [
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/4c04bd0fe9bf45ecaf2bae96017aa56d_9366/NMD_V3_Shoes_Black_HP4316_01_standard.jpg",
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/814e64e3d2344c3598b2ae96017ab3a3_9366/NMD_V3_Shoes_Black_HP4316_02_standard_hover.jpg"
+      ],
+      "original_price": "15999",
+      "discounted_price": "null",
+      "category": "Mens",
+      "sub_category": "originals",
+      "rating": 4.8,
+      "product_type": "Footwear",
+      "id": 7
+    },
+    {
+      "name": "EQ21 RUN SHOES",
+      "product_img": [
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/92ce19bcac5e4ac99d76ad580157b956_9366/ZX_5K_BOOST_Shoes_Beige_GV7704_01_standard.jpg",
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b74ad585ba3e4d4393a9ad5800f33401_9366/ZX_5K_BOOST_Shoes_Beige_GV7704_012_hover_standard.jpg"
+      ],
+      "original_price": "15999",
+      "discounted_price": "9599",
+      "category": "Mens",
+      "sub_category": "originals",
+      "rating": 4.8,
+      "product_type": "Footwear",
+      "id": 8
+    },
+    {
+      "name": "EQ21 RUN SHOES",
+      "product_img": [
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/a9e5cc0b0a354326b046ae7a00e0111b_9366/Adicolor_Classics_Trace_Tee_Green_HM4913_21_model.jpg",
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/5d28f62d069c4eccb7d3ae7a00e04d56_9366/Adicolor_Classics_Trace_Tee_Green_HM4913_01_laydown.jpg"
+      ],
+      "original_price": "3599",
+      "discounted_price": "nukk",
+      "category": "Mens",
+      "sub_category": "originals",
+      "rating": 4.8,
+      "product_type": "T-shirt",
+      "id": 9
+    },
+    {
+      "name": "EQ21 RUN SHOES",
+      "product_img": [
+        "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/7df049c20c0d450abb11ae4d00ef9a3c_9366/Adicolor_Classics_Trace_Tee_Blue_HM4914_21_model.jpg",
+        "https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/7df049c20c0d450abb11ae4d00ef9a3c_9366/Adicolor_Classics_Trace_Tee_Blue_HM4914_21_model.jpg"
+      ],
+      "original_price": "3599",
+      "discounted_price": "null",
+      "category": "Mens",
+      "sub_category": "originals",
+      "rating": 4.8,
+      "product_type": "T-shirt",
+      "id": 10
+    },
+    {
+      "name": "EQ21 RUN SHOES",
+      "product_img": [
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b36311c253f8420ebbaeae800080637d_9366/Adicolor_Classics_Firebird_Primeblue_Track_Pants_Blue_HL9346_21_model.jpg",
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b36311c253f8420ebbaeae800080637d_9366/Adicolor_Classics_Firebird_Primeblue_Track_Pants_Blue_HL9346_21_model.jpg"
+      ],
+      "original_price": "4999",
+      "discounted_price": "null",
+      "category": "Mens",
+      "sub_category": "originals",
+      "rating": 4.8,
+      "product_type": "Trackpants",
+      "id": 11
+    },
+    {
+      "name": "ADICOLOR CLASSICS FIREBIRD PRIMEBLUE TRACK PANTS",
+      "product_img": [
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b36311c253f8420ebbaeae800080637d_9366/Adicolor_Classics_Firebird_Primeblue_Track_Pants_Blue_HL9346_21_model.jpg",
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b36311c253f8420ebbaeae800080637d_9366/Adicolor_Classics_Firebird_Primeblue_Track_Pants_Blue_HL9346_21_model.jpg"
+      ],
+      "original_price": "4999",
+      "discounted_price": "null",
+      "category": "Mens",
+      "sub_category": "originals",
+      "rating": 4.8,
+      "product_type": "Trackpants",
+      "id": 12
+    },
+    {
+      "name": "ZX 5K BOOST SHOES",
+      "product_img": [
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/7df69015a9024149b7f5ad490115139c_9366/ZX_5K_BOOST_Shoes_Grey_GV7701_01_standard.jpg",
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/7df69015a9024149b7f5ad490115139c_9366/ZX_5K_BOOST_Shoes_Grey_GV7701_01_standard.jpg"
+      ],
+      "original_price": "15999",
+      "discounted_price": "7999",
+      "category": "Mens",
+      "sub_category": "originals",
+      "rating": 4.8,
+      "product_type": "sneakers",
+      "id": 13
+    },
+    {
+      "name": "ADISTAR SHOES",
+      "product_img": [
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/607ee4e6f27e448dbd93ad7800a2f512_9366/Adistar_Shoes_Blue_GX3000_01_standard.jpg",
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/607ee4e6f27e448dbd93ad7800a2f512_9366/Adistar_Shoes_Blue_GX3000_01_standard.jpg"
+      ],
+      "original_price": "12999",
+      "discounted_price": "9099",
+      "category": "Mens",
+      "sub_category": "Running",
+      "rating": 4.8,
+      "product_type": "sneakers",
+      "id": 14
+    },
+    {
+      "name": "SUPERNOVA CUSHION 7 SHOES",
+      "product_img": [
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/6ceb99c3b02e42c78d10adf000b47b96_9366/Supernova_Cushion_7_Shoes_Black_GY5931_01_standard.jpg",
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/6ceb99c3b02e42c78d10adf000b47b96_9366/Supernova_Cushion_7_Shoes_Black_GY5931_01_standard.jpg"
+      ],
+      "original_price": "11999",
+      "discounted_price": "7199",
+      "category": "Mens",
+      "sub_category": "Running",
+      "rating": 4.8,
+      "product_type": "sneakers",
+      "id": 15
+    },
+    {
+      "name": "SUPERNOVA CUSHION 7 SHOES",
+      "product_img": [
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/71c51dccafc243a2a49bad200062086b_9366/Terrex_Trailmaker_Primegreen_Hiking_Shoes_Beige_S29055_01_standard.jpg",
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/71c51dccafc243a2a49bad200062086b_9366/Terrex_Trailmaker_Primegreen_Hiking_Shoes_Beige_S29055_01_standard.jpg"
+      ],
+      "original_price": "9999",
+      "discounted_price": "6999",
+      "category": "Mens",
+      "sub_category": "Terrex",
+      "rating": 4.8,
+      "product_type": "sneakers",
+      "id": 16
+    },
+    {
+      "name": "GRAPHICS UNITED HOODIE",
+      "product_img": [
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/65c1b09502d04d90a1c6add2014d1482_9366/Graphics_United_Hoodie_Pink_HF4903_21_model.jpg",
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/65c1b09502d04d90a1c6add2014d1482_9366/Graphics_United_Hoodie_Pink_HF4903_21_model.jpg"
+      ],
+      "original_price": "6599",
+      "discounted_price": "3959",
+      "category": "Mens",
+      "sub_category": "originals",
+      "rating": 4.8,
+      "product_type": "sweatshirt",
+      "id": 17
+    },
+    {
+      "name": "DISNEY MICKEY AND FRIENDS HOODIE",
+      "product_img": [
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/9a5dc0fd25264b0cb35bae1a00d9d9e7_9366/Disney_Mickey_and_Friends_Hoodie_Black_HF4931_21_model.jpg",
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/9a5dc0fd25264b0cb35bae1a00d9d9e7_9366/Disney_Mickey_and_Friends_Hoodie_Black_HF4931_21_model.jpg"
+      ],
+      "original_price": "6999",
+      "discounted_price": "4899",
+      "category": "Mens",
+      "sub_category": "originals",
+      "rating": 4.8,
+      "product_type": "sweatshirt",
+      "id": 18
+    },
+    {
+      "name": "SL SINGLE JERSEY TO PANTS",
+      "product_img": [
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/0b86171a07b44f1782e3aebb01586184_9366/SL_SINGLE_JERSEY_TO_PANTS_Black_HY5421_21_model.jpg",
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/0b86171a07b44f1782e3aebb01586184_9366/SL_SINGLE_JERSEY_TO_PANTS_Black_HY5421_21_model.jpg"
+      ],
+      "original_price": "2299",
+      "discounted_price": "1609",
+      "category": "Mens",
+      "sub_category": "originals",
+      "rating": 4.8,
+      "product_type": "T-shirt",
+      "id": 19
+    },
+    {
+      "name": "ESSENTIALS FRENCH TERRY TAPERED-CUFF 3-STRIPES PANTS",
+      "product_img": [
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/ee3e7479bab84711b60eaeae00938b55_9366/ESSENTIALS_FRENCH_TERRY_TAPERED-CUFF_3-STRIPES_PANTS_Black_HN5862_21_model.jpg",
+        "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/ee3e7479bab84711b60eaeae00938b55_9366/ESSENTIALS_FRENCH_TERRY_TAPERED-CUFF_3-STRIPES_PANTS_Black_HN5862_21_model.jpg"
+      ],
+      "original_price": "2799",
+      "discounted_price": "1959",
+      "category": "Mens",
+      "sub_category": "Sportswear",
+      "rating": 4.8,
+      "product_type": "Trackpants",
+      "id": 20
+    }
+  ]
+}
