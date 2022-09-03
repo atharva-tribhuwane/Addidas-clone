@@ -1,0 +1,1 @@
+{"_id":{"$oid":"630f61e9c720bc2a940bb966"},"pro_name":"test","pro_img":["test1.png","test2.png"],"categeory":"footwear","sub_cat":"mens","price":{"$numberInt":"1000"},"reviwes":[{"rating":"5"}],"pro_det":"xaji sldixlj  d","pro_dis":"xijdsldj ldcjdsjc","__v":{"$numberInt":"0"}}
