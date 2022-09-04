@@ -1,0 +1,220 @@
+.content_1rB_s div[data-auto-id="pdp_content_navigation"] {
+    display: block;
+  }
+  .navigation_wrapper_1E4J7 {
+    width: inherit;
+    height: 68px;
+    margin-bottom: var(--gl-spacing-0800);
+    z-index: 54;
+    position: sticky;
+    top: -1px;
+    overflow: hidden;
+  }
+  .navigation_wrapper_1E4J7 .navigation_pjBTo {
+    z-index: 54;
+    backface-visibility: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  
+  .gl_tab {
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid #d3d7da;
+    border-top: 1px solid #d3d7da;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  .navigation_wrapper_1E4J7 .navigation_pjBTo.ready_iRWm3 .gl_tab_tab_list {
+    opacity: 1;
+    transition: opacity 0.1s ease-out;
+  }
+  
+  .gl_tab_tab_list_mobile {
+    overflow-x: scroll;
+  }
+  
+  .gl_tab_tab_list {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    user-select: none;
+    white-space: nowrap;
+  }
+  
+  .navigation_wrapper_1E4J7 .navigation_pjBTo .gl_tab_item {
+    color: inherit;
+    letter-spacing: 2px;
+    font-size: 14px;
+  }
+  
+  .gl_app button {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    touch-action: manipulation;
+  }
+  
+  .gl_tab_item {
+    border: none;
+    border-top: 3px solid white;
+    cursor: pointer;
+    /* display: flex;
+    flex-shrink: 0; */
+    margin-bottom: 0px;
+    margin-right: 5px;
+    margin-top: 0;
+    opacity: 1;
+    overflow: hidden;
+    padding: 20px 15px;
+    text-align: center;
+    text-overflow: ellipsis;
+    transition: color 0.3s cubic-bezier(0.3, 0, 0, 1);
+    white-space: nowrap;
+  }
+  
+  h5 {
+    display: block;
+    font-size: 0.83em;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+  }
+  
+  h5 {
+    margin: 0;
+    padding: 0;
+  }
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .content_wrapper_7kDpB.content_visibility_enabled_9none
+    .content_visibility_auto {
+    content-visibility: auto;
+  }
+  .content_item_1H95n.overflow_jMM_g {
+    overflow: inherit;
+  }
+  .content_item_1H95n.visible_2mOxe,
+  .content_item_1H95n.is_crawler_render_10CUn {
+    opacity: 1;
+    transform: none;
+  }
+  
+  .content_item_1H95n.full_width_never_3cg9Q {
+    width: 100%;
+    max-width: 970px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .content_item_1H95n {
+    overflow: hidden;
+    position: relative;
+    transition: transform 1s cubic-bezier(0.2, 0.8, 0.4, 1),
+      opacity 1s cubic-bezier(0.2, 0.8, 0.4, 1);
+    margin: auto;
+    margin-bottom: 80px;
+    padding-top: 6px;
+  }
+  .description_2nN4A {
+    display: flex;
+    flex-flow: column;
+  }
+  
+  .text_content_1EWJO,
+  .media_1ux_z {
+    width: 100%;
+  }
+  
+  .text_content_1EWJO {
+    white-space: pre-line;
+  }
+  
+  .content_item_1H95n.full_width_never_3cg9Q h5 {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  
+  h5,
+  .gl_heading,
+  .heading_IO3QX {
+    font-family: Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  
+  .heading_IO3QX {
+    font-size: 26px;
+    line-height: 24px;
+  }
+  .gl_heading_italic {
+    font-family: "AdihausDIN Cn", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+  }
+  
+  p,
+  .gl_body,
+  .gl_paragraph {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 16px;
+  }
+  
+  .media_1ux_z img {
+    max-width: 100%;
+  }
+  
+  @media (min-width: 960px) {
+    .nitin {
+      display: flex;
+      justify-content: center;
+    }
+    .content_item_1H95n.full_width_never_3cg9Q {
+      padding-left: 20px;
+    }
+    .content_item_1H95n {
+      margin-bottom: 74px;
+    }
+    .description_2nN4A {
+      flex-flow: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .text_content_1EWJO,
+    .media_1ux_z {
+      width: calc((1 / 2) * 100% - 5px);
+    }
+    .gl_heading_s {
+      letter-spacing: 0.7px;
+    }
+  }
+  
+  @media (min-width: 960px) and (min-width: 1280px) {
+    .text_content_1EWJO,
+    .media_1ux_z {
+      width: calc((1 / 2) * 100% - 15px);
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .content_item_1H95n.full_width_never_3cg9Q {
+      padding-left: 30px;
+    }
+    .heading_IO3QX {
+      font-size: 30px;
+      line-height: 28px;
+    }
+  }

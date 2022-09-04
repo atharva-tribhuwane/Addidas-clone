@@ -1,0 +1,11 @@
+.at-productsgrid{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 5px;
+}
+
+.filterlist>span{
+    border: 1px solid red;
+}

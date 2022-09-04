@@ -1,0 +1,225 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+/* h5 {
+  display: block;
+  font-size: 0.83em;
+  margin-block-start: 1.67em;
+  margin-block-end: 1.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+} */
+
+/* ul {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+} */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.gl_heading {
+  font-family: "AdineuePRO", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: var(--gl-spacing-0150);
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.content_wrapper_7kDpB.content_visibility_enabled_9none
+  .content_visibility_auto {
+  content-visibility: auto;
+}
+.content_item_1H95n.overflow_jMM_g {
+  overflow: inherit;
+}
+.content_item_1H95n.visible_2mOxe,
+.content_item_1H95n.is_crawler_render_10CUn {
+  opacity: 1;
+  transform: none;
+}
+
+.content_item_1H95n.full_width_never_3cg9Q {
+  width: 100%;
+  max-width: 970px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.content_item_1H95n {
+  overflow: hidden;
+  position: relative;
+  transform: translateY(32px);
+  transition: transform 1s cubic-bezier(0.2, 0.8, 0.4, 1),
+    opacity 1s cubic-bezier(0.2, 0.8, 0.4, 1);
+  opacity: 0;
+  margin: auto;
+  margin-bottom: 80px;
+  padding-top: 6px;
+}
+
+.content_item_1H95n.full_width_never_3cg9Q h5 {
+  padding-right: 0;
+  padding-left: 0;
+}
+.heading_1iTXn {
+  margin-bottom: 0px;
+}
+
+.heading_IO3QX {
+  font-size: 26px;
+  line-height: 24px;
+}
+.bullets_NV9iB {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bullets_NV9iB .gl_list {
+  list-style: disc;
+}
+
+.gl-list {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 22px;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.bullets_NV9iB .gl_list li {
+  margin-left: 18px;
+}
+.bullets_NV9iB ul .gl_vspace_bpall_small {
+  margin-top: 15px;
+}
+.gl_list li,
+.gl_list_item {
+  padding-left: 10px;
+  white-space: normal;
+}
+
+.specifications_table_3C17U {
+  padding: 20px 0;
+}
+.gl_table {
+  display: block;
+  overflow: auto;
+}
+.specifications_table_3C17U .gl_table_inner {
+  border-width: 1px 1px 0 1px;
+  border-style: solid;
+  border-color: #767677;
+}
+.gl_table_inner {
+  height: max-content;
+  min-width: 100%;
+  width: max-content;
+}
+
+.specifications_table_3C17U .gl_table_row {
+  border-bottom: 1px solid #767677;
+}
+.gl_table_row {
+  align-items: stretch;
+  display: flex;
+  min-width: 100%;
+  width: max-content;
+}
+
+.specifications_table_3C17U .gl_table_cell {
+  border-right: 1px solid #767677;
+}
+
+.gl_table_row_head .gl_table_cell {
+  background-color: black;
+  color: white;
+  margin: 0;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 20px;
+  text-decoration: none;
+  text-transform: none;
+}
+.gl_table_cell {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  flex: 1 1 120px;
+  justify-content: stretch;
+  padding: 15px 20px;
+  position: relative;
+  text-align: center;
+  width: 120px;
+}
+
+.gl_table_cell_inner {
+  width: 100%;
+}
+
+.specifications_table_3C17U .gl_table_cell:last-child {
+  border: none;
+}
+.specifications_table_3C17U .gl_table_row {
+  border-bottom: 1px solid #767677;
+}
+
+.gl_table_striped_columns .gl_table_row_body .gl_table_cell:nth-child(2n) {
+  background: #e9ecef;
+}
+
+@media (min-width: 960px) {
+  .content_item_1H95n.full_width_never_3cg9Q {
+    padding-left: 20px;
+  }
+  .content_item_1H95n {
+    margin-bottom: 74px;
+  }
+  .bullets_NV9iB {
+    flex-direction: row;
+  }
+}
+@media (min-width: 960px) and (min-width: 1280px) {
+  .bullets_NV9iB ul {
+    width: calc((1 / 2) * 100% - 15px);
+  }
+}
+
+@media (min-width: 1280px) {
+  .content_item_1H95n.full_width_never_3cg9Q {
+    padding-left: 30px;
+  }
+  .heading_IO3QX {
+    font-size: 30px;
+    line-height: 28px;
+  }
+}

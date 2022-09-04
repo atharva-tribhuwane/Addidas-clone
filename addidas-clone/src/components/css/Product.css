@@ -1,0 +1,75 @@
+.at-mens-products{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    /* grid-auto-columns: auto; */
+    gap: 1%;
+    width: 80%;
+    margin: auto;
+    z-index: -1;
+}
+
+.at-producttt{
+    cursor: pointer;
+}
+
+.at-producttt>div{
+    width: 100%;
+    /* border: 1px solid red;  */
+    text-align: start;
+    max-height: 280px;
+ }
+
+.at-producttt>div:nth-child(3){
+    font-size: 16px;
+    color: gray;
+ }
+.at-producttt>div>span{
+    /* width: 100%; */
+    /* border: 5px solid green;  */
+    text-align: start;
+    max-height: 280px;
+    position: relative;
+    top:-30px;
+    left:11px;
+    background-color: white;
+    width:30%;
+    padding: 1%;
+    /* z-index: 1; */
+    /* overflow: hidden; */
+    /* visibility: hidden; */
+    /* display: none; */
+ }
+.at-producttt>div>img{ 
+    width: 100%;
+    /* border: 1px solid red; */
+    height:280px;
+}
+
+.checkb{
+    /* border: 1px solid red; */
+    position: relative;
+    bottom:309px;
+    left:240px;
+    width: 15%;
+    color: red;
+}
+
+/* .at-productimg{
+} */
+.at-product-names{
+    padding-left: 4%;
+    margin: 3% 0;
+}
+
+.at-producttt:hover{
+    border: 1px solid black;
+    height: 400px;
+    /* position:absolute;
+    background-color: white; */
+    
+}
+
+.at-filtandsort{
+    border: 1px solid red;
+    width: 80%;
+}

@@ -1,0 +1,117 @@
+.bground{
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.logo{
+    position: absolute;
+    top: 70px;
+    left: 80px;
+    width: 20%;
+    height: 20%;
+}
+.text{
+    position: absolute;
+    top: 210px;
+    left: 80px;
+    color: white;
+    font-size: xxx-large;
+}
+.text1{
+    position: absolute;
+    top: 310px;
+    left: 80px;
+    width: 30%;
+    color: white;
+    font-size: x-large;
+}
+.button{
+    position: absolute;
+    top: 460px;
+    left: 80px;
+    width: 12%;
+    height: 8%;
+    color: white;
+    font-size: large;
+    color: black;
+    font-weight: bold;
+}
+.flex-outside{
+    display: flex;
+    /* flex-wrap: wrap; */
+    padding-top: 50px;
+    padding-bottom: 300px;
+}
+.flex-inside{
+    display: flex;
+    padding-left: 50px;
+}
+.flex-inside .border{
+    /* min-width: 150px; */
+    height: 100px;
+    padding-right: 20px;
+}
+.border {
+    position: relative;
+    top: 0;
+    left: 0;
+    /* width: 100%; */
+    z-index: -1;
+}
+.discount-tag{
+    position: absolute;
+    background: white;
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+    left: 10px;
+    top: 230px;
+    text-transform: capitalize;
+}
+.org-price{
+    text-decoration: line-through;
+}
+.dis-price{
+    color: red;
+}
+.dis-percentage{
+    position: absolute;
+    background: white;
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+    left: 10px;
+    top: 190px;
+    font-weight: bold;
+    /* text-transform: capitalize; */
+}
+span{
+    color: rgb(114, 108, 108);
+}
+.text2{
+    padding-left: 50px;
+}
+/* ReactPlayer{
+    width: 10%;
+    height: 50%;
+} */
+.border1{
+    position: relative;
+    top: 0;
+    left: 0;
+    /* width: 100%; */
+    z-index: -1;
+    /* margin-left: 100px; */
+    padding-right: 20px;
+}
+.check{
+    padding-left: 100px;
+    width: 500px;
+    height: 350px;
+    padding-right: 100px;
+}
+.spacing{
+    padding-left: 200px;
+    /* padding-right: 200px; */
+}

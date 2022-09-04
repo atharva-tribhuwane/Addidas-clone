@@ -1,0 +1,335 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+/* .carouse {
+  height: 250px;
+} */
+
+section {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.content_wrapper_7kDpB.content_visibility_enabled_9none
+  .content_visibility_auto {
+  content-visibility: auto;
+}
+
+.content_item_1H95n.visible_2mOxe,
+.content_item_1H95n.is_crawler_render_10CUn {
+  opacity: 1;
+  transform: none;
+}
+
+.content_item_1H95n.full_width_mobile_1AHib {
+  max-width: 1190px;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.content_item_1H95n {
+  overflow: hidden;
+  position: relative;
+  transform: translateY(32px);
+  transition: transform 1s cubic-bezier(0.2, 0.8, 0.4, 1),
+    opacity 1s cubic-bezier(0.2, 0.8, 0.4, 1);
+  opacity: 0;
+  margin: auto;
+  margin-bottom: var(--gl-spacing-0800);
+  padding-top: 6px;
+}
+
+.heading_IO3QX {
+  font-size: 26px;
+  line-height: 24px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.gl-heading {
+  font-family: "AdineuePRO", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.updated_grid_2PV7N {
+  width: 100%;
+}
+.gl_carousel {
+  padding-right: 0;
+}
+
+.gl_carousel_content {
+  position: relative;
+}
+
+.gl_carousel_content {
+  min-height: 275px;
+}
+
+.gl_carousel_slider {
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  width: 100%;
+}
+
+.gl_carousel_content .gl_carousel_item_wrapper {
+  min-height: 280px !important;
+}
+
+.gl_carousel .glass_product_card_container {
+  width: auto;
+}
+
+.product_with_less_space_5HpHb .glass_product_card_container {
+  margin: 0;
+}
+
+.gl_carousel_item_wrapper.product_with_less_space_5HpHb {
+  margin-right: 10px;
+}
+
+.product_with_less_space_5HpHb:hover {
+  border: 1px solid black;
+}
+
+.product_wrapper_medium_cards_ELOtk > div {
+  margin: 0;
+}
+
+.glass_product_card_container {
+  position: relative;
+}
+.gl_carousel_item_wrapper_add_snap {
+  scroll-snap-align: start;
+}
+
+.glass_product_card {
+  color: black;
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.product_card_content_2O10f {
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 0;
+}
+
+.product_card_content_2O10f .glass_product_card_assets {
+  position: relative;
+}
+
+.glass_product_card_assets {
+  background: rgb(233 236 239);
+  border-bottom: 0;
+}
+
+.glass_product_card a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.glass_product_card_assets_link {
+  display: block;
+}
+.glass_product_card_image {
+  display: block;
+  width: 100%;
+}
+
+.glass_product_card_assets_link {
+  display: block;
+}
+
+a {
+  border-radius: 0;
+  box-shadow: none;
+  outline: none;
+}
+
+.glass_product_card a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+.gl_app a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  touch-action: manipulation;
+}
+
+.product_card_content_badges_wrapper_2brrU {
+  position: absolute;
+  bottom: 0;
+}
+
+.product_card_content_2O10f .badge_container_DVUWN {
+  position: relative;
+  left: 5px;
+  bottom: 5px;
+  top: 5px;
+  width: fit-content;
+  transition: transform 0.2s ease;
+}
+
+.product_card_content_2O10f .badge_container_DVUWN .gl_price,
+.product_card_content_2O10f .badge_container_DVUWN span:only-child {
+  margin-top: 5px;
+  background-color: #fff;
+  padding: 2px 5px 2px 5px;
+}
+div.gl_price_inline_2z9ZX {
+  display: inline-flex;
+}
+.gl_price_horizontal {
+  align-items: center;
+}
+
+.gl_price {
+  flex-wrap: wrap;
+  font-family: AdihausDIN, var(--gl-font-family-fallback);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 22px;
+  text-decoration: none;
+  text-transform: none;
+}
+.product_card_content_2O10f .gl_price_item {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.gl_price_item:last-child {
+  margin-right: 0px;
+}
+
+.product_card_content_2O10f .glass_product_card_details {
+  min-height: 90px;
+  padding: 10px 10px 20px 10px;
+}
+
+.glass_product_card_details {
+  clear: both;
+  display: block;
+  overflow: auto;
+}
+
+.gl_paragraph {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.gl_paragraph_s {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.gl_paragraph {
+  font-family: "AdihausDIN", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+.glass_product_card_category {
+  color: rgb(118 118 119);
+  flex: 1 1 auto;
+  font-family: "AdihausDIN", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.product_wrapper_medium_cards_ELOtk {
+  width: 145px;
+}
+@media (min-width: 600px) {
+  .gl_carousel_content .gl_carousel_item_wrapper {
+    min-height: 386px !important;
+  }
+  /* .plp_product_card_1sck4 {
+    padding: 16px 0 16px 0;
+  } */
+}
+
+@media (min-width: 960px) {
+  /* .gl_carousel_content .gl_carousel_item_wrapper {
+    min-height: 400px !important;
+  } */
+  .glass_product_card {
+    border: 1px solid transparent;
+  }
+  .glass_product_card_details {
+    min-height: 129px;
+  }
+  .content_item_1H95n.full_width_mobile_1AHib {
+    width: 100%;
+    max-width: 970px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .content_item_1H95n {
+    margin-bottom: 74px;
+  }
+  .content_item_1H95n.full_width_mobile_1AHib h5 {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .content_item_1H95n.full_width_mobile_1AHib .gl_carousel_slider {
+    padding-right: 0;
+    padding-left: 0;
+    scroll-padding-left: 0;
+  }
+  .product_wrapper_medium_cards_ELOtk {
+    width: 235px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .product_wrapper_medium_cards_ELOtk {
+    width: 260px;
+  }
+  .heading_IO3QX {
+    font-size: 30px;
+    line-height: 28px;
+  }
+  .product_wrapper_medium_cards_ELOtk {
+    width: 260px;
+  }
+}
+
+@media (min-width: 960px) and (min-width: 960px) {
+  .content_item_1H95n.full_width_mobile_1AHib {
+    padding-left: 20px;
+  }
+}
+
+@media (min-width: 960px) and (min-width: 1280px) {
+  .content_item_1H95n.full_width_mobile_1AHib {
+    padding-left: 30px;
+  }
+}
