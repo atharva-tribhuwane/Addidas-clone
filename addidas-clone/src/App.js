@@ -11,10 +11,10 @@ function App() {
   return (
     <div className="App">
        <Routes>
-       {/* <Route path = "/men" element = {<Men/>}></Route> */}
-       {/* <Route path = "/checkout" element = {<Checkout/>}></Route> */}
-       {/* <Route path = "/delivery" element = {<Delivery/>}></Route> */}
-       {/* <Route path = "/" element = {<Home/>}></Route> */}
+       <Route path = "/men" element = {<Men/>}></Route>
+       <Route path = "/checkout" element = {<Checkout/>}></Route>
+       <Route path = "/delivery" element = {<Delivery/>}></Route>
+       <Route path = "/" element = {<Home/>}></Route>
        </Routes>
        <FinalFoot />
     </div>
