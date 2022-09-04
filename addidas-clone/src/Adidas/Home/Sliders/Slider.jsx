@@ -55,7 +55,7 @@ const Slider = () => {
 
   return (
     <>
-      <div className="main-wrapper">
+      <div className="main-wrapper-slider">
         <div className="title-wrapper">
           <p>NEW ARRIVALS</p>
           <Link to="/products">
