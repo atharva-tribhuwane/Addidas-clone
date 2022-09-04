@@ -64,11 +64,11 @@
 }
 
 .at-producttt:hover{
-    border: 1px solid black;
-    height: 400px;
+    border: 1px solid black; 
+    /* height: 400px; */
     
     /* position:absolute;
-    background-color: white; */
+    background-color: white;*/
     
 }
 
