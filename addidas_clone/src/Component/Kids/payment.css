@@ -35,6 +35,35 @@ body {
     cursor: pointer;
 }
 
+
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#logoImgA{
+    width:60px; margin-left: 100px; 
+}
+#navContainerA{
+    display: flex; margin-left: 70px;
+    flex-wrap: wrap;
+}
+#navContainerA > div > div{
+    width: 18px; height: 20px; color: white; background-color: black;
+     border-radius: 50%; margin:-4px 10px 10px 30px; text-align: center; padding: 2px;
+     font-size: 14px;
+}
+#navContainerA > div{
+    display: flex; font-size: 12px; margin-top: 30px; font-weight: bold; letter-spacing: 1px;
+}
+#queA{
+    color: gray; margin-left: 200px;
+}
+
+
+
+
+
+
 #rightSideBox {
     height: 100%;
     width: 10%;
@@ -298,16 +327,16 @@ body {
 
 #footer>p:first-child {
     display: inline-block;
-    margin: 0% 0% 2% 16%;
+    margin: 0% 0% 2% 40%;
 }
 
 #footer>p:nth-child(2) {
     display: inline-block;
-    margin: 1% 0% 2% 45%;
+    margin: 1% 0% 2% 1%;
 }
 
 #footer>p:last-child {
-    margin: 0% 0% 2% 16%;
+    margin: 0% 0% 2% 46%;
 }
 
 a {
@@ -370,19 +399,19 @@ a {
         display: inline-block;
         margin-left: 2200px;
         margin-top: 15px;
-        border: 5px solid white;
+       
     }
 
     #footer>p:nth-child(2) {
         display: inline-block;
         margin-left: 0px;
-        border: 5px solid red;
+        
     }
 
     #footer>p:last-child {
         margin-top: 10px;
         margin-left: 130px;
-        border: 5px solid red;
+        
     }
 }
 

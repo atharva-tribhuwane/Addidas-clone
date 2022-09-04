@@ -226,21 +226,38 @@ export const Payment = () => {
         <div>SIGN UP & GET 15% OFF</div>
     </div> */}
 
-    {topHeader?.map((ele)=>(<div id="topHeader"><div>{ele}</div></div>))}
+    {/* {topHeader?.map((ele)=>(<div id="topHeader"><div>{ele}</div></div>))}
     
 
     <div id="header">
         <a href="adidas_home_page.html">
             <img class="adidasLogo" src="https://www.adidas.co.in/glass/react/16d1049/assets/img/icon-adidas-logo.svg" alt=""/>
         </a>
-        <div id="rightSideBox">
+        </div> */}
+
+
+        {/* <div id="rightSideBox">
             <button>sign up</button>
             <button>log in</button>
             <p>
                 <a href="Newcart.html"><i class="material-icons">shopping_bag</i></a>
             </p>
-        </div>
+            </div>   */}
+
+    <img id="logoImgA" src="https://www.freepnglogos.com/uploads/adidas-logo-png-hd-17.png" alt=""/>
+    <div id="navContainerA">
+        <div><div>1</div>BAG</div>
+        <div><div>2</div>DELIVERY</div>
+        <div><div>3</div>PAYMENT</div>
+        <div><div>4</div>ORDER COMPLETE</div>
+        <div id="queA"> &#9743; QUESTIONS? &ensp;<a href="#">1800-120-3300</a> &ensp; &ensp; 8AM - 8PM, 7 days a week</div>
     </div>
+    <hr/>
+
+
+
+        
+   
 
     <div id="container">
 
@@ -255,7 +272,7 @@ export const Payment = () => {
                     <input      onChange={(prev)=>{setCodS(false) ; setShow(true);setCard({checked:true});setCod({checked:false})}}  type="radio" id="cardBtn" class="creditcardBtn" name="payment" value="creditCard" checked/>
                     <label for="creditCard" class="creditCardOption">Credit/Debit Card</label>
                     { show?<div id="showCCOption">
-                        <input type="text" id="cardNumber"  onChange={(e)=>setCardNum(e.target.value)} placeholder="Card Number"/>
+                        <input type="text" id="cardNumber"  onChange={(e)=>setCardNum(e.target.value)} placeholder="Enter 16 digit Card Number"/>
                         <input type="text" id="cardName" onChange={(e)=>setCardNam(e.target.value)} placeholder="Name On Card"/>
                         <input type="text" id="cardDate" onChange={(e)=>setMonYear(e.target.value)} placeholder="MM / YY"/>
                         <input type="number" id="cvv" onChange={(e)=>setCvvDet(e.target.value)} placeholder="CVV"/>
@@ -266,7 +283,9 @@ export const Payment = () => {
                     <input    onChange={()=>{cashon_delivery();setCard({checked:true});setCod({checked:false})}}   type="radio" id="codBtn" name="payment" value="cod"/>
                     <label for="cod" class="creditCardOption">Cash on Delivery</label>
 
-                    {codS?<p>some text</p>:""}
+                    {codS?<p>No online payment needed – pay in cash using the exact change once your items are delivered!
+
+                 Your bank account details will only be required if you wish to return anything for a refund.</p>:""}
                     <button id="submitBtn" onClick={()=>{payment();}}>PLACE ORDER</button>
                 </div>
 
