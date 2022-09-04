@@ -50,7 +50,7 @@ export const Mens = () => {
 
             </div>
             <div style={{ marginTop: "10%" }}>
-                <h1 style={{ width: "80%", margin: "auto", textAlign: "start", marginBottom: "0" }}>MEN ORIGINALS</h1>
+                <h1 style={{ width: "80%", margin: "auto", textAlign: "start", marginBottom: "0" }}>MENS ORIGINALS</h1>
                 <Slider style={{ marginTop: "0" }}></Slider>
             </div>
             <div style={{ marginTop: "10%" }}>

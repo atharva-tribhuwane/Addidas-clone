@@ -229,9 +229,21 @@ export const Popup = ({ prop }) => {
           <div>All Men's Sports</div>
         </div>
         : prop === "women" ?
-        <div>Hello world2</div> 
-        : prop === "kids" ?
-        <div>Hello world3</div>
+        <div>
+        <div>All Women's</div>
+        <div>All Women's Footwear</div>
+        <div>All Women's Clothing</div>
+        <div>All Women's Accessories</div>
+        <div>All Women's Sports</div>
+      </div> 
+        : prop === "kids"?
+        <div>
+        <div>All Kid's</div>
+        <div>All Kid's Footwear</div>
+        <div>All Kid's Clothing</div>
+        <div>All Kid's Accessories</div>
+        <div>All Kid's Sports</div>
+      </div>
         : null
       }
 

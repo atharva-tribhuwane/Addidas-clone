@@ -128,15 +128,7 @@ export default function Filterandsort({handleoptionChange}) {
                     </IconButton>
                 </DrawerHeader>
                 <Divider />
-                <List>
-                    <div>Applied Filters</div>
-                    <List>
-                        <div classname="filterlist">
-                            <span>Male </span>
-                            <span>Running </span>
-                        </div>
-                    </List>
-                </List>
+                
                 <List>
                     <Accordion>
                         <AccordionSummary
@@ -189,7 +181,7 @@ export default function Filterandsort({handleoptionChange}) {
                                     '&.Mui-checked': {
                                         color: "black",
                                     },
-                                }} button style={{ textAlign: "start", paddingLeft: "0" }} value="Male" onChange={(e)=>handleoptionChange(e)}/>
+                                }} button style={{ textAlign: "start", paddingLeft: "0" }} value="Male" onChange={(e)=>handleoptionChange(e,"Men")}/>
                                 <ListItemText primary="Male" />
                             </ListItem>
                             {/* <Divider /> */}
@@ -199,7 +191,7 @@ export default function Filterandsort({handleoptionChange}) {
                                     '&.Mui-checked': {
                                         color: "black",
                                     },
-                                }} button style={{ textAlign: "start", paddingLeft: "0" }} value="Female" onChange={(e)=>handleoptionChange(e)}/>
+                                }} button style={{ textAlign: "start", paddingLeft: "0" }} value="Female" onChange={(e)=>handleoptionChange(e,"Women")}/>
                                 <ListItemText primary="Female" />
                             </ListItem>
                             <ListItem button style={{ textAlign: "start", paddingLeft: "0" }}>
@@ -208,7 +200,7 @@ export default function Filterandsort({handleoptionChange}) {
                                     '&.Mui-checked': {
                                         color: "black",
                                     },
-                                }} button style={{ textAlign: "start", paddingLeft: "0" }} value="Kids" onChange={(e)=>handleoptionChange(e)}/>
+                                }} button style={{ textAlign: "start", paddingLeft: "0" }} value="Kids" onChange={(e)=>handleoptionChange(e,"Kids")}/>
                                 <ListItemText primary="Kids" />
                             </ListItem>
                         </AccordionDetails>

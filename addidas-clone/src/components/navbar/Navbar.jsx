@@ -5,6 +5,7 @@ import { GiReturnArrow } from "react-icons/gi";
 import { BiHeart } from "react-icons/bi";
 import "./css/Navbar.css";
 import { Popup } from './Popup';
+import {Link} from "react-router-dom"
 export const Navbar = () => {
     const [showmen,setShowmen] = React.useState(false);
     const [showwomen,setShowwomen] = React.useState(false);
@@ -14,10 +15,6 @@ export const Navbar = () => {
     const [showcollection,setShowcollection] = React.useState(false);
     const [showoutlet,setShowoutlet] = React.useState(false);
 
-    async function getdata(){
-        let res = await fetch("https://fakestoreapi.com/products");
-        let data = res.json();
-    }
     return (
         <div className='Navbar'>
             <div className='nav-top-section'>
@@ -65,9 +62,9 @@ export const Navbar = () => {
                         <div><AiOutlineSearch /></div>
                     </div>
                     <div>
-                        <div><AiOutlineUser /></div>
-                        <div><BiHeart /></div>
-                        <div><AiOutlineShopping /></div>
+                        <div><Link to="/wishlist"><AiOutlineUser style={{cursor:"pointer"}}/></Link></div>
+                        <div><Link to="/wishlist"><BiHeart style={{cursor:"pointer"}}/></Link></div>
+                        <div><Link to="/wishlist"><AiOutlineShopping style={{cursor:"pointer"}}/></Link></div>
                     </div>
                 </div>
             </div>

@@ -7,21 +7,23 @@ import {Women} from "./components/Women"
 import {Products} from "./components/Products";
 import Project from "./components/ProductDetails"
 import {Routes, Route} from "react-router-dom";
+import { Wishlist } from './components/Wishlist';
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <Routes>
+      <Wishlist></Wishlist>
+      {/* <Routes> */}
         {/* <Mens /> */}
-        <Route path="/" element={<Products/>}></Route>
+        {/* <Route path="/" element={<Products/>}></Route>
         <Route path="/prod/:id" element={<Project/>}></Route>
         <Route path="/mens" element={<Mens/>}></Route>
         <Route path="/" element={<Women/>}></Route>
-        <Route path="/" element={<Kids/>}></Route>
+        <Route path="/" element={<Kids/>}></Route> */}
         {/* <Products /> */}
         {/* <Kids /> */}
         {/* <Project/> */}
-      </Routes>
+      {/* </Routes> */}
     </div>
   );
 }
