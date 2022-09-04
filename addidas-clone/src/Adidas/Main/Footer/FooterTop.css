@@ -1,18 +1,34 @@
 .footer-top-yellow {
   display:flex;
+  margin: auto;
   height: 150px;
   background-color: yellow;
   color: black;
-  font-weight: 700;
   text-align: center;
   box-sizing: border-box;
-  padding-top: 50px;
-  font-size: 30px;
+  justify-content: left;
+  vertical-align: middle;
+ 
+}
+.footer-top-yellow-div{
+width:550px;
+text-align: left;
+height:150px;
+vertical-align: middle;
+margin-top: -15px;
+}
+.footer-top-yellow-p{
+   font-size: 40px;
+    font-weight: 600;
+    padding:15px;
+
 }
 .div-brutal-video {
   border: 2px solid black;
   width: 200px;
   height:70px;
+  vertical-align: middle;
+  margin-top: 30px;
 }
 .button-brutal-video {
   display:flex;

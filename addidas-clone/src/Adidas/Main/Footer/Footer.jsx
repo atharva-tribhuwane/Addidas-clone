@@ -9,7 +9,7 @@ function Footer() {
         
         <Col style={{width:"350px"}}>
           <li className="heading-foot">PRODUCTS</li>
-          <Row >
+          <Row>
             <li>Footwear</li>
             <li>Clothing</li>
             <li>Accesoruies</li>
