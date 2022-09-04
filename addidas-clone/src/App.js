@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+
+import {Routes,Route} from "react-router-dom"
+import Home from "./Adidas/Home/Home"
+import FinalFoot from './Adidas/Main/Footer/FinalFoot'
+import Men from './Adidas/Home/Sliders/Men';
+import Checkout from './Adidas/checkout/Checkout';
+import Delivery from './Adidas/Delivery/Delivery';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <Routes>
+       {/* <Route path = "/men" element = {<Men/>}></Route>
+       <Route path = "/checkout" element = {<Checkout/>}></Route>
+       <Route path = "/delivery" element = {<Delivery/>}></Route> */}
+       <Route path = "/" element = {<Home/>}></Route>
+       </Routes>
+       <FinalFoot />
     </div>
   );
 }
