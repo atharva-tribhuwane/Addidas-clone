@@ -1,4 +1,5 @@
 
+import './App.css';
 import {Routes,Route} from "react-router-dom"
 import Home from "./Adidas/Home/Home"
 import FinalFoot from './Adidas/Main/Footer/FinalFoot'

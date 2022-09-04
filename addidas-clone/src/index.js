@@ -4,13 +4,13 @@ import './index.css';
 import App from './App';
 import { BrowserRouter } from "react-router-dom";
 import {Provider} from "react-redux"
-// import { store } from './Adidas/Redux/store';
+import { store } from './Adidas/Redux/store';
  const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-  {/* <Provider store = {store}> */}
+  <Provider store = {store}>
     <App />
-  {/* </Provider> */}
+  </Provider>
   </BrowserRouter>
  
 );
