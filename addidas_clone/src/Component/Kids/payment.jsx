@@ -31,7 +31,9 @@ export const Payment = () => {
 
 
         useEffect(()=>{
-        },[show,cod])
+
+
+        },[show,codS,card,cod])
     function topHeaderSlideShow() {
 
         // let topHeader = document.getElementById("topHeader");
@@ -68,27 +70,6 @@ export const Payment = () => {
             topHeaderSlideShow();
         },[])
         
-
-        // let cod = document.getElementById("codBtn");
-        // let card = document.getElementById("cardBtn");
-        // let cardDetails = document.getElementById("showCCOption");
-        // let newCardDet = cardDetails.innerHTML;
-        // let cardBox = document.getElementById("creditOptionBox");
-
-        // function selectCod(){
-        //     console.log("Working for cod");
-        //     console.log(cardDetails.innerHTML);
-        //     cardDetails.innerHTML = null;
-        //     cardBox.style.height = "10%";
-        // }
-
-        // function showCredit(){
-        //     console.log("Working for card");
-        //     console.log(newCardDet);
-        //     cardDetails.innerHTML = newCardDet;
-        //     cardBox.style.height = "75%";
-        // }
-
         function checkNumbers(input, specialVal){
             let inputNum = input;
             let flag = true;
@@ -151,6 +132,7 @@ export const Payment = () => {
         //payment check
 
         function payment() {
+            console.log("cod",cod);
             if(cod.checked){ 
                 let interval = setTimeout(function () {
                 alert("Your order has been placed succesfully. Happy Shopping!");
@@ -211,6 +193,7 @@ export const Payment = () => {
         const cashon_delivery=()=>{
             setCodS(true) ;
             setShow(false);
+            setCod({checked:true});
         }
 
 
@@ -249,7 +232,7 @@ export const Payment = () => {
         <div><div>1</div>BAG</div>
         <div><div>2</div>DELIVERY</div>
         <div><div>3</div>PAYMENT</div>
-        <div><div>4</div>ORDER COMPLETE</div>
+        <div><div style={{color: 'white',backgroundColor: "#b6b6b6"}}>4</div>ORDER COMPLETE</div>
         <div id="queA"> &#9743; QUESTIONS? &ensp;<a href="#">1800-120-3300</a> &ensp; &ensp; 8AM - 8PM, 7 days a week</div>
     </div>
     <hr/>
@@ -269,7 +252,7 @@ export const Payment = () => {
             <div id="cardDetails">
 
             <div id="creditOptionBox">
-                    <input      onChange={(prev)=>{setCodS(false) ; setShow(true);setCard({checked:true});setCod({checked:false})}}  type="radio" id="cardBtn" class="creditcardBtn" name="payment" value="creditCard" checked/>
+                    <input      onChange={()=>{setCodS(false) ; setShow(true);setCard({checked:true});setCod({checked:false})}}  type="radio" id="cardBtn" class="creditcardBtn" name="payment" value="creditCard" checked/>
                     <label for="creditCard" class="creditCardOption">Credit/Debit Card</label>
                     { show?<div id="showCCOption">
                         <input type="text" id="cardNumber"  onChange={(e)=>setCardNum(e.target.value)} placeholder="Enter 16 digit Card Number"/>
@@ -280,7 +263,7 @@ export const Payment = () => {
                 </div>
 
                 <div class="codOptionBox">
-                    <input    onChange={()=>{cashon_delivery();setCard({checked:true});setCod({checked:false})}}   type="radio" id="codBtn" name="payment" value="cod"/>
+                    <input    onChange={()=>{cashon_delivery();setCard({checked:false});setCod({checked:true})}}   type="radio" id="codBtn" name="payment" value="cod"/>
                     <label for="cod" class="creditCardOption">Cash on Delivery</label>
 
                     {codS?<p>No online payment needed – pay in cash using the exact change once your items are delivered!
