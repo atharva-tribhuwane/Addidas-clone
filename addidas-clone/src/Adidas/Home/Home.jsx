@@ -14,18 +14,7 @@ import { Button } from "react-bootstrap";
 function Home() {
   return (
     <Fragment>
-      <Link to="/checkout">
-        <button
-          style={{
-            width: "200px",
-            height: "100px",
-            fontSize: "50px",
-            fontWeight: "800",
-          }}
-        >
-          cart
-        </button>
-      </Link>
+     
       <div className="home-wrapper">
         <div>
           <ReactPlayer
