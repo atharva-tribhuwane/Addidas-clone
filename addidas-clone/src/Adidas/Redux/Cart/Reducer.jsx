@@ -3,7 +3,7 @@ import {LOGIN_LOADING, LOGIN_ERROR, CART_TOTAL, LOGOUT_SUCCESS } from "./ActionT
 const initialState={
     loading:null,
     erroe:null,
-    total:null
+    total:0
 }
 
 export const reducer=(state=initialState,{type,payload})=>{
@@ -19,7 +19,7 @@ export const reducer=(state=initialState,{type,payload})=>{
               ...state,
               loading:1,
               error:1,
-              total:payload
+              total:state+payload;
           }
           case LOGIN_ERROR:
             return{
