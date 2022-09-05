@@ -19,7 +19,7 @@ export const reducer=(state=initialState,{type,payload})=>{
               ...state,
               loading:1,
               error:1,
-              total:state+payload;
+              total:state+payload
           }
           case LOGIN_ERROR:
             return{
