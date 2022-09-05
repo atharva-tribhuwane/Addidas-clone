@@ -64,7 +64,7 @@ export const Sign = () => {
       password: res.profileObj.googleId,
     }
     try {
-      let data = await fetch('http://localhost:8080/createUser', {
+      let data = await fetch('https://backend-gamma-vert.vercel.app/reg', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -92,14 +92,24 @@ export const Sign = () => {
       password: passwordRegister
       // name: nameRegister,
     }
-    for( let i in user){
-      if(user[i]==""){
-        alert("Enter valid Details")
-        return
-      }
+    console.log(user.password.length)
+    if(user.email =="" ){
+      alert("Enter Valid Details")
+      return
     }
+    if(user.password.length<=8){
+      alert("Enter Valid Details")
+      return
+    }
+
+    // for( let i in user){
+    //   if(user[i]==""){
+    //     alert("Enter valid Details")
+    //     return
+    //   }
+    // }
     try {
-      let data = await fetch('http://localhost:8080/createUser', {
+      let data = await fetch('https://backend-gamma-vert.vercel.app/reg', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

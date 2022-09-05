@@ -46,7 +46,7 @@ export const Login = () => {
       password: res.profileObj.googleId,
     }
     try {
-      let data = await fetch('http://localhost:8080/login', {
+      let data = await fetch('https://backend-gamma-vert.vercel.app/log', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -87,7 +87,7 @@ export const Login = () => {
     try {
       
 
-      let data = await fetch('http://localhost:8080/login', {
+      let data = await fetch('https://backend-gamma-vert.vercel.app/log', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -95,11 +95,13 @@ export const Login = () => {
         body: JSON.stringify(body),
       })
 
+
+
       let response = await data.json()
       console.log(response)
      
-      if(response.message){
-        alert(response.message)
+      if(response.error){
+        alert(response.error)
       }else{
       let token = response.token
       localStorage.setItem('token', token)
