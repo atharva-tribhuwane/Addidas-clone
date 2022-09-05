@@ -1,35 +1,17 @@
-import {LOGIN_LOADING, LOGIN_ERROR, CART_TOTAL, LOGOUT_SUCCESS } from "./ActionType"
+import {CART_TOTAL } from "./ActionType"
 
 const initialState={
-    loading:null,
-    erroe:null,
-    total:0
+    total:null
 }
 
 export const reducer=(state=initialState,{type,payload})=>{
-  switch(type){
-
-    case LOGIN_LOADING:
-        return{
-            ...state,
-            loading:1
-        }
+  switch(type){   
         case CART_TOTAL:
           return{
               ...state,
-              loading:1,
-              error:1,
-              total:state+payload
+              total:payload
           }
-          case LOGIN_ERROR:
-            return{
-                ...state,
-                loading:1,
-                error:1
-            }
-            case LOGOUT_SUCCESS:
-              return initialState;
-        
+         
        default :
        return state
 

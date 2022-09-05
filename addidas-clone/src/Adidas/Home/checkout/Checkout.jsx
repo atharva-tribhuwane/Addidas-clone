@@ -7,30 +7,21 @@ import { FaRegHeart } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import CheckoutProduct from "./CheckoutProduct";
+import { useDispatch } from "react-redux";
+import { totalcartprice } from "../../Redux/Cart/Action";
 
 const Checkout = () => {
-  const [cartItems, setSlider] = React.useState([]);
+  const [cartItems, setItems] = React.useState([]);
 
+
+  const dispatch=useDispatch()
   const getData = () => {
     axios
-      .get(
-        "https://backend-gamma-vert.vercel.app/pro",
-        {}
-      )
-      .then((res) => setSlider(res.data.slice(20)))
+      .get("https://backend-gamma-vert.vercel.app/pro", {})
+      .then((res) => setItems(res.data.slice(20)))
       .catch((e) => {
         console.log(e);
       });
-  };
-
-  React.useEffect(() => {
-    getData();
-  }, []);
-  const [qty, setQty] = React.useState(1);
-
-  const handleChange = (event) => {
-    setQty(event.target.value);
-    console.log(qty);
   };
 
   let totalprice = 0;
@@ -39,6 +30,13 @@ const Checkout = () => {
     noofcarts += 1;
     totalprice += item.price;
   });
+  console.log(totalprice)
+  React.useEffect(() => {
+    getData();
+    dispatch(totalcartprice(totalprice))
+  }, []);
+ 
+
 
   return (
     <>
@@ -77,7 +75,6 @@ const Checkout = () => {
               style={{ marginTop: "64px" }}
             >
               {cartItems.map((item) => (
-                
                 <CheckoutProduct
                   image={item.pro_img[0]}
                   name={item.pro_name}
@@ -89,7 +86,11 @@ const Checkout = () => {
           </div>
           <Link
             to="./delivery"
-            style={{ border: "none", textDecoration: "none",marginBottom:"60px" }}
+            style={{
+              border: "none",
+              textDecoration: "none",
+              marginBottom: "60px",
+            }}
           >
             <div className="div-brutal-video-checkout" style={{ width: "45%" }}>
               <button className="button-brutal-video-checkout">

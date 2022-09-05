@@ -1,4 +1,3 @@
-export const LOGIN_LOADING="LOGIN_LOADING";
+
 export const CART_TOTAL="CART_TOTAL";
-export const LOGIN_ERROR="LOGIN_ERROR";
-export const LOGOUT_SUCCESS="LOGOUT_SUCCESS";
+

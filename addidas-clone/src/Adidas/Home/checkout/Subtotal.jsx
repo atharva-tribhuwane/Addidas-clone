@@ -6,6 +6,7 @@ import { useSelector } from "react-redux";
 
 const Subtotal = ({ total,qty }) => {
   const totalPrice=useSelector((state)=>state.cart.total)
+  console.log(totalPrice)
   return (
     <div style={{ width: "100%",marginBottom:"100px" }}>
       <Link to="./delivery" style={{ border: "none", textDecoration: "none" }}>
@@ -37,7 +38,7 @@ const Subtotal = ({ total,qty }) => {
 
           <div className="order-values">
             <p>{qty} ITEMS</p>
-            <p>{totalPrice}</p>
+            <p>{total}</p>
           </div>
           <div className="order-values">
             <p>DELIVERY</p>
@@ -48,7 +49,7 @@ const Subtotal = ({ total,qty }) => {
               <p style={{ fontSize: "24px", fontWeight: "500" }}>TOTAL</p>
               <p style={{ marginTop: "-15px" }}>(Inclusive of all taxes)</p>
             </div>
-            <p style={{ fontSize: "24px", fontWeight: "500" }}>{totalPrice}</p>
+            <p style={{ fontSize: "24px", fontWeight: "500" }}>{total}</p>
           </div>
         </div>
       </div>
