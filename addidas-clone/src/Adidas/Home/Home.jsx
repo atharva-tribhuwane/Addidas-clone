@@ -1,16 +1,13 @@
 import React, { Fragment } from "react";
 import ReactPlayer from "react-player";
-import Alkira from "./Alkira";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import Popular from "./Popular";
 import CardShop from "./CardShop";
 import "./Home.css";
 import Slider from "./Sliders/Slider";
 import Whatshot from "./Sliders/Whatshot";
-import { Link } from "react-router-dom";
 import Story from "./Story";
-import { Button } from "react-bootstrap";
-import { useSelector,useDispatch } from "react-redux";
+
 
 function Home() {
 
