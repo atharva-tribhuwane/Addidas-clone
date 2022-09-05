@@ -12,7 +12,7 @@ function FinalFoot() {
 
   return (
     <>
-      <FooterTop style={{marginTop:"50px"}} />
+      <FooterTop  />
        <Footer />
       <FootBottom />
     </>
