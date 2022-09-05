@@ -4,9 +4,9 @@ import "./Subtotal.css";
 import { Link } from "react-router-dom";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 
-const Subtotal = ({ total }) => {
+const Subtotal = ({ total,qty }) => {
   return (
-    <div style={{ width: "100%" }}>
+    <div style={{ width: "100%",marginBottom:"100px" }}>
       <Link to="./delivery" style={{ border: "none", textDecoration: "none" }}>
         <div className="div-brutal-video-checkout">
           <button className="button-brutal-video-checkout">
@@ -35,8 +35,8 @@ const Subtotal = ({ total }) => {
           </div>
 
           <div className="order-values">
-            <p>{} ITEMS</p>
-            <p></p>
+            <p>{qty} ITEMS</p>
+            <p>{total}</p>
           </div>
           <div className="order-values">
             <p>DELIVERY</p>
@@ -51,9 +51,7 @@ const Subtotal = ({ total }) => {
           </div>
         </div>
       </div>
-      <div style={{width:"100%",height:"60px"}}>
-        <input placeholder="Enter Promo Code" ></input>
-      </div>
+     
       <div style={{ display: "flex", marginTop:"30px"}}>
         <div>
           <img
