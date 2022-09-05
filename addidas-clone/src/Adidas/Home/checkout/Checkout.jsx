@@ -7,14 +7,14 @@ import { FaRegHeart } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import CheckoutProduct from "./CheckoutProduct";
-import { useDispatch } from "react-redux";
-import { totalcartprice } from "../../Redux/Cart/Action";
+// import { useDispatch } from "react-redux";
+// import { totalcartprice } from "../../Redux/Cart/Action";
 
 const Checkout = () => {
   const [cartItems, setItems] = React.useState([]);
 
 
-  const dispatch=useDispatch()
+  // const dispatch=useDispatch()
   const getData = () => {
     axios
       .get("https://backend-gamma-vert.vercel.app/pro", {})
@@ -33,7 +33,7 @@ const Checkout = () => {
   console.log(totalprice)
   React.useEffect(() => {
     getData();
-    dispatch(totalcartprice(totalprice))
+    // dispatch(totalcartprice(totalprice))
   }, []);
  
 

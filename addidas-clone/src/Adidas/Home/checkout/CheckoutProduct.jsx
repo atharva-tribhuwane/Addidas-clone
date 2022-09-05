@@ -4,13 +4,13 @@ import "./Checkout.css";
 import axios from 'axios'
 import { ImCross, ImPriceTag } from "react-icons/im";
 import { FaRegHeart } from "react-icons/fa";
-import { useDispatch } from "react-redux";
-import { totalcartprice } from "../../Redux/Cart/Action";
+// import { useDispatch } from "react-redux";
+// import { totalcartprice } from "../../Redux/Cart/Action";
 
 
 const CheckoutProduct = ({image, id, name, price  }) => {
     const [qty, setQty]=React.useState(1)
-    const dispatch=useDispatch()
+    // const dispatch=useDispatch()
     
   const handleChange=(event) =>{
     setQty(event.target.value);

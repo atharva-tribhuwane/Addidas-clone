@@ -2,11 +2,11 @@ import React from "react";
 import "./Subtotal.css";
 import { Link } from "react-router-dom";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
-import { useSelector } from "react-redux";
+// import { useSelector } from "react-redux";
 
 const Subtotal = ({ total,qty }) => {
-  const totalPrice=useSelector((state)=>state.cart.total)
-  console.log(totalPrice)
+  // const totalPrice=useSelector((state)=>state.cart.total)
+  // console.log(totalPrice)
   return (
     <div style={{ width: "100%",marginBottom:"100px" }}>
       <Link to="./delivery" style={{ border: "none", textDecoration: "none" }}>
