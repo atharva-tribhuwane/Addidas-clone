@@ -1,0 +1,63 @@
+.input_name {
+    padding: 0.8rem 0;
+    width: 325px;
+  }
+  .heading {
+    font-size: 40px;
+    font-family: "adineue PRO Cyr Bold";
+    color: black;
+  }
+  .login {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .forget {
+    color: black;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    text-decoration-color: black;
+    font-weight: 100;
+    font-size: small;
+    /* display: inline; */
+  }
+  
+  .forget:hover {
+    background-color: black;
+    color: white;
+    text-decoration-color: white;
+    padding: 1px 1px;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .button_container {
+    border: 2px black solid;
+    width: 126px;
+    height: 40px;
+  }
+  .button {
+    position: relative;
+  }
+  .button > button {
+    left: -5px;
+    top: -5px;
+    position: absolute;
+    border: 0;
+    background-color: black;
+    color: white;
+    padding: 8px 38px;
+    transition: all 0.3s;
+  }
+  .button > button:hover {
+    color: gray;
+  }
+  
+  .flex__login {
+    display: flex;
+    margin: 50px 100px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }

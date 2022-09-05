@@ -8,21 +8,45 @@ import {Products} from "./components/Products";
 import Project from "./components/ProductDetails"
 import {Routes, Route} from "react-router-dom";
 import { Wishlist } from './components/Wishlist';
+import { Sign } from './components/Sign-Login';
+import { Login } from './components/Login';
+import { ChakraProvider } from '@chakra-ui/react';
+import Payment from './components/Payment';
+import Home from './components/Home/Home';
+import { Log1 } from './components/Log1';
 function App() {
   return (
+  
     <div className="App">
       <Navbar />
-      <Wishlist></Wishlist>
-      {/* <Routes> */}
-        {/* <Mens /> */}
-        {/* <Route path="/" element={<Products/>}></Route>
+      {/* <Home></Home> */}
+      <Routes>
+        <Route path="/" element={<Home/>}></Route>
+        <Route path="/products" element={<Products />}></Route>
         <Route path="/prod/:id" element={<Project/>}></Route>
         <Route path="/mens" element={<Mens/>}></Route>
-        <Route path="/" element={<Women/>}></Route>
-        <Route path="/" element={<Kids/>}></Route> */}
+        <Route path="/womens" element={<Women/>}></Route>
+        <Route path="/kids" element={<Kids/>}></Route>
+        <Route path="/signup" element={<Sign/>}></Route>
+        <Route path="/login" element={<Login/>}></Route>
+      </Routes>
+      {/* <Wishlist></Wishlist> */}
+      {/* <Sign></Sign> */}
+      {/* <Login></Login> */}
+      {/* <Payment></Payment> */}
+      {/* <Routes> */}
+        {/* <Mens /> */}
+         {/* <Route path="/" element={<Products/>}></Route> */}
+        {/*<Route path="/prod/:id" element={<Project/>}></Route>
+         */}
         {/* <Products /> */}
         {/* <Kids /> */}
         {/* <Project/> */}
+        {/* <ChakraProvider> */}
+        {/* <Route path="/signup" element={<Sign/>}></Route> */}
+        {/* <Route path="/login" element={<Login/>}></Route> */}
+        {/* </ChakraProvider> */}
+        {/* <Route path="/wishlist" element={<Wishlist/>}></Route> */}
       {/* </Routes> */}
     </div>
   );

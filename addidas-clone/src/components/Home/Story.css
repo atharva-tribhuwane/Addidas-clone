@@ -1,0 +1,70 @@
+.main-wrapper{
+    width:100%;
+    background-color: #e9ecef;
+  }
+  
+  .artical-wrapper-main{
+    display: flex;
+    padding:30px;
+    gap:10px;
+    text-align: left;
+    width:90%;
+    margin: auto;
+    background-color: #e9ecef;
+  }
+  .article-div{
+    padding:40px;
+  }
+  .heading{
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 35px;
+    margin-bottom: 20px;
+  }
+  .article-text{
+    font-size: 19px;
+    letter-spacing: 0.5px;
+    line-height: 22px;
+  }
+  
+  
+  @media (min-width: 600px) {
+    .seo_component_container_NLzc8 {
+      padding: 80px 0 80px;
+    }
+  }
+  
+  @media (min-width: 960px) {
+    .container {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .seo_first_column_11FNY {
+      padding-bottom: 0;
+    }
+    .offset_l_1 {
+      margin-left: 4.1666666667%;
+    }
+    .seo_content_1f6HA {
+      margin-top: 20px;
+    }
+    .col_l_11 {
+      width: 45.8333333333%;
+    }
+    .seo_second_column_2TpgF {
+      margin-top: 0;
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .container {
+      width: 1280px;
+    }
+    .offset_xl_2 {
+      margin-left: 8.3333333333%;
+    }
+    .col_xl_10 {
+      width: 41.6666666667%;
+    }
+  }

@@ -5,7 +5,8 @@ import { GiReturnArrow } from "react-icons/gi";
 import { BiHeart } from "react-icons/bi";
 import "./css/Navbar.css";
 import { Popup } from './Popup';
-import {Link} from "react-router-dom"
+import {Link} from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 export const Navbar = () => {
     const [showmen,setShowmen] = React.useState(false);
     const [showwomen,setShowwomen] = React.useState(false);
@@ -15,6 +16,14 @@ export const Navbar = () => {
     const [showcollection,setShowcollection] = React.useState(false);
     const [showoutlet,setShowoutlet] = React.useState(false);
 
+    const navigate = useNavigate();
+
+    const gotofunc = ()=>{
+        navigate("/signup");
+    }
+    const gotoprods = (navpar) =>{
+        navigate(`/${navpar}`);
+    }
     return (
         <div className='Navbar'>
             <div className='nav-top-section'>
@@ -39,7 +48,7 @@ export const Navbar = () => {
                     <span><a href=""> help</a></span>
                     <span><a href=""> return</a></span>
                     <span><a href=""> order tracker</a></span>
-                    <span><a href=""> signup</a></span>
+                    <span><a href="" onClick={gotofunc}> signup</a></span>
                 </div>
             </div>
 
@@ -48,13 +57,14 @@ export const Navbar = () => {
                     <img src="https://www.adidas.co.in/glass/react/b857677/assets/img/icon-adidas-logo.svg" alt="" />
                 </div>
                 <div className="nav-links-at">
-                    <span onMouseEnter={()=>setShowmen(true)} onMouseLeave={()=>setShowmen(false)}>MEN</span>
-                    <span onMouseEnter={()=>setShowwomen(true)} onMouseLeave={()=>setShowwomen(false)}>WOMEN</span>
-                    <span onMouseEnter={()=>setShowkids(true)} onMouseLeave={()=>setShowkids(false)}>KIDS</span>
+                    <span onMouseEnter={()=>setShowmen(true)} onMouseLeave={()=>setShowmen(false)}><Link to="/mens"> MEN</Link></span>
+                    <span onMouseEnter={()=>setShowwomen(true)} onMouseLeave={()=>setShowwomen(false)}><Link to="/womens"> Womens</Link></span>
+                    <span onMouseEnter={()=>setShowkids(true)} onMouseLeave={()=>setShowkids(false)}><Link to="/kids">Kids</Link></span>
                     <span onMouseEnter={()=>setShowsports(true)} onMouseLeave={()=>setShowsports(false)}>SPORTS</span>
                     <span onMouseEnter={()=>setShowbrands(true)} onMouseLeave={()=>setShowbrands(false)}>BRANDS</span>
                     <span onMouseEnter={()=>setShowcollection(true)} onMouseLeave={()=>setShowcollection(false)}>COLLECTION</span>
-                    <span onMouseEnter={()=>setShowoutlet(true)} onMouseLeave={()=>setShowoutlet(false)}>OUTLET</span>
+                    <span> <Link to="/products"> OUTLET</Link></span>
+                    {/* <Link to="/products"> OUTLET</Link> */}
                 </div>
                 <div className="nav-search-at">
                     <div>
@@ -62,16 +72,16 @@ export const Navbar = () => {
                         <div><AiOutlineSearch /></div>
                     </div>
                     <div>
-                        <div><Link to="/wishlist"><AiOutlineUser style={{cursor:"pointer"}}/></Link></div>
+                        <div><Link to="/login"><AiOutlineUser style={{cursor:"pointer"}}/></Link></div>
                         <div><Link to="/wishlist"><BiHeart style={{cursor:"pointer"}}/></Link></div>
                         <div><Link to="/wishlist"><AiOutlineShopping style={{cursor:"pointer"}}/></Link></div>
                     </div>
                 </div>
             </div>
             {
-            showmen ? <div  onMouseEnter={()=>setShowmen(true)} onMouseLeave={()=>setShowmen(false)} className="at-nav-popup"><Popup prop="men"/></div>
-            :showwomen?<div  onMouseEnter={()=>setShowwomen(true)} onMouseLeave={()=>setShowwomen(false)} className="at-nav-popup"><Popup prop="women"/></div>
-            :showkids?<div  onMouseEnter={()=>setShowkids(true)} onMouseLeave={()=>setShowkids(false)} className="at-nav-popup"><Popup prop="kids"/></div>
+            showmen ? <div  onMouseEnter={()=>setShowmen(true)} onMouseLeave={()=>setShowmen(false)} className="at-nav-popup" onClick={gotoprods("mens")}><Popup prop="men"/></div>
+            :showwomen?<div  onMouseEnter={()=>setShowwomen(true)} onMouseLeave={()=>setShowwomen(false)} className="at-nav-popup" onClick={gotoprods("womens")}><Popup prop="women"/></div>
+            :showkids?<div  onMouseEnter={()=>setShowkids(true)} onMouseLeave={()=>setShowkids(false)} className="at-nav-popup" onClick={gotoprods("products")}><Popup prop="kids" /></div>
             :showsports?<div  onMouseEnter={()=>setShowsports(true)} onMouseLeave={()=>setShowsports(false)} className="at-nav-popup"><Popup prop="sports"/></div>
             :showbrands?<div  onMouseEnter={()=>setShowbrands(true)} onMouseLeave={()=>setShowbrands(false)} className="at-nav-popup"><Popup prop="brands"/></div>
             :showcollection?<div  onMouseEnter={()=>setShowcollection(true)} onMouseLeave={()=>setShowcollection(false)} className="at-nav-popup"><Popup prop="collection"/></div>

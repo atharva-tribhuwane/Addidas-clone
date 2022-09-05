@@ -4,7 +4,7 @@ import "./Wishlistprod.css";
 
 export const Wishprodcard = () => {
   return (
-    <div className='at-producttt'>
+    <div className='at-productttt'>
         <div>
           <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/735e0991a6704cb4973ead4300a44613_9366/Designed_to_Move_Fleece_Pants_Black_GT1424_01_laydown.jpg" alt="" className='at-productimg'/>
           <span>{`₹ 2830`}</span>

@@ -1,0 +1,44 @@
+.login-with-facebook{
+  width: 180px;
+  /* height: 30px; */
+    background-color: rgb(255, 255, 255);
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    color: rgba(0, 0, 0, 0.54);
+    box-shadow: rgb(0 0 0 / 24%) 0px 2px 2px 0px, rgb(0 0 0 / 24%) 0px 0px 1px 0px;
+    padding: 10px;
+    border-radius: 2px;
+    border: 1px solid transparent;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Roboto, sans-serif;
+    margin-right: 800px;
+ }
+ .login-with-facebook>button{
+  border: none;
+ }
+ .login-with-google{
+  width: 200px;
+  margin-right: 800px;
+  height: 40px;
+ }
+ .register:hover{
+  color:black
+ }
+ .alreadyAccount:hover{
+  color:black
+ }
+ #outlined-size-small{
+  width: 800px;
+  margin-right: 900px;
+  margin:"auto";
+  /* margin-bottom:"5px" */
+  font-family:'AdineuePRO, Helvetica, Arial, sans-serif'
+ }
+ .checkbox2{
+  /* width: 10px; */
+  margin-top: -10px;
+  padding-top: 0;
+ }

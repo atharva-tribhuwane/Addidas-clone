@@ -1,31 +1,23 @@
-.at-mens-products{
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    /* grid-auto-columns: auto; */
-    gap: 1%;
-    width: 80%;
-    margin: auto;
-    z-index: -1;
-}
 
-.at-producttt{
+.at-productttt{
     cursor: pointer;
     width: 25%;
     margin-right: 2%;
+    /* border: 1px solid red; */
 }
 
-.at-producttt>div{
+.at-productttt>div{
     width: 100%;
     /* border: 1px solid red;  */
     text-align: start;
     max-height: 280px;
  }
 
-.at-producttt>div:nth-child(3){
+.at-productttt>div:nth-child(3){
     font-size: 16px;
     color: gray;
  }
-.at-producttt>div>span{
+.at-productttt>div>span{
     /* width: 100%; */
     /* border: 5px solid green;  */
     text-align: start;
@@ -41,7 +33,7 @@
     /* visibility: hidden; */
     /* display: none; */
  }
-.at-producttt>div>img{ 
+.at-productttt>div>img{ 
     width: 100%;
     /* border: 1px solid red; */
     height:280px;
@@ -63,7 +55,7 @@
     margin: 3% 0;
 }
 
-.at-producttt:hover{
+.at-productttt:hover{
     border: 1px solid black; 
     /* height: 400px; */
     
