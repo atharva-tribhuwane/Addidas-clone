@@ -10,7 +10,7 @@ function CardShop() {
         <p>WHO ARE YOU SHOPPING FOR?</p>
       </div>
       <div className="card-group-shop">
-        <Link to="./men">
+        <Link style={{textDecoration:"none",border:"none"}} to="./men">
           <div className="card-shop">
             <img
               src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/enIN/Images/evergreen-homepage-gender-navigation-men-dt_tcm209-761437.jpg"
@@ -19,7 +19,7 @@ function CardShop() {
             <div className="center-tag">MEN</div>
           </div>
         </Link>
-        <Link to="./women">
+        <Link style={{textDecoration:"none",border:"none"}} to="./women">
           {" "}
           <div className="card-shop">
             <img
@@ -29,7 +29,7 @@ function CardShop() {
             <div className="center-tag">WOMEN</div>
           </div>
         </Link>
-        <Link to="./kids">
+        <Link style={{textDecoration:"none",border:"none"}} to="./kids">
           <div className="card-shop">
             <img
               src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/enIN/Images/kids_1_tcm209-792188.png"

@@ -8,13 +8,11 @@ const Subtotal = ({ total }) => {
   
   return (
     <div>
-     
       <div className="subtotal">
         <div className="order-title">
           {" "}
           <p>ORDER SUMMARY</p>
         </div>
-
         <div className="order-values">
           <p>ORIGINAL PRICE</p>
           <p>{}</p>

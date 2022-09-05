@@ -1,59 +1,66 @@
 import React from "react";
 import "./Subtotal.css";
-import CurrencyFormat from "react-currency-format";
-import { useSelector } from "react-redux";
-import { Link } from "react-router-dom";
-import { CgArrowLongRight } from "react-icons/cg";
 
-// import {getCartTotal} from '../../redux/reducer/reducer'
+import { Link } from "react-router-dom";
+import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 
 const Subtotal = ({ total }) => {
-  const cartItems = useSelector((state) => state.cart);
-
-  // console.log(cartItems,'crtItem');
   return (
-    <div>
-      <div className="div-brutal-vid">
-        <button className="button-brutal-vid">
-          <Link to="/delivery">
-            Checkout <CgArrowLongRight style={{ fontSize: "25px" }} />
-          </Link>
-        </button>
-      </div>
-      <div className="subtotal">
-        <div className="order-title">
-          {" "}
-          <p>ORDER SUMMARY</p>
+    <div style={{ width: "100%" }}>
+      <Link to="./delivery" style={{ border: "none", textDecoration: "none" }}>
+        <div className="div-brutal-video-checkout">
+          <button className="button-brutal-video-checkout">
+            <div className="div-underbutton-checkout">
+              <p
+                style={{
+                  fontSize: "18px",
+                  fontWeight: "700",
+                  letterSpacing: "1.5px",
+                  marginTop: "10px",
+                }}
+              >
+                CHECKOUT
+              </p>
+              <HiOutlineArrowNarrowRight
+                style={{ fontSize: "30px", marginTop: "10px" }}
+              />
+            </div>
+          </button>
         </div>
+      </Link>
+      <div className="subtotal-div-subtotal">
+        <div style={{ padding: "20px" }}>
+          <div className="order-title-subtotal">
+            <p>ORDER SUMMARY</p>
+          </div>
 
-        <div className="order-values">
-          <p>ORIGINAL PRICE</p>
-          <p>{}</p>
+          <div className="order-values">
+            <p>{} ITEMS</p>
+            <p></p>
+          </div>
+          <div className="order-values">
+            <p>DELIVERY</p>
+            <p>FREE</p>
+          </div>
+          <div className="order-values">
+            <div>
+              <p style={{ fontSize: "24px", fontWeight: "500" }}>TOTAL</p>
+              <p style={{ marginTop: "-15px" }}>(Inclusive of all taxes)</p>
+            </div>
+            <p style={{ fontSize: "24px", fontWeight: "500" }}>{total}</p>
+          </div>
         </div>
-        <div className="order-values">
-          <p>ON SALE</p>
-          <p></p>
-        </div>
-        <div className="order-values">
-          <p>{} ITEMS</p>
-          <p></p>
-        </div>
-        <div className="order-values">
-          <p>DELIVERY</p>
-          <p>FREE</p>
-        </div>
-        <div className="order-values">
-          <p>BUY MORE SAVE MORE</p>
-          <p></p>
-        </div>
-        <div className="order-values">
-          <p>TOTAL</p>
-          <p>{total}</p>
-        </div>
-    
       </div>
-      <div>
-     
+      <div style={{width:"100%",height:"60px"}}>
+        <input placeholder="Enter Promo Code" ></input>
+      </div>
+      <div style={{ display: "flex", marginTop:"30px"}}>
+        <div>
+          <img
+            src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/enIN/Images/visa-master-rupay-cd_tcm209-732258.png"
+            alt="partners"
+          />
+        </div>
       </div>
     </div>
   );

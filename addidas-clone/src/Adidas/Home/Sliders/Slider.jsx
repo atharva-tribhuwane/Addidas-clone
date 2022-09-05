@@ -4,6 +4,8 @@ import "react-multi-carousel/lib/styles.css";
 import "./slider.css";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import {FaRegHeart } from "react-icons/fa";
+
 
 const Slider = () => {
   const [slider, setSlider] = useState([]);
@@ -22,7 +24,11 @@ const Slider = () => {
     getData();
   }, []);
 
- 
+ const handleAddWish=(id)=>{
+  axios
+  .post(`https://backend-gamma-vert.vercel.app/wish/${id}`, {})
+  .then((res) => alert("Added to your wishlist"))
+ }
  
   const responsive = {
     superLargeDesktop: {
@@ -75,6 +81,7 @@ const Slider = () => {
               <div className="card-main-wrapper">
                
                   <div className="card-img-price-div">
+                
                     <img src={item.pro_img[0]} alt="Forum Low Shoes" />
                     <div className="card-price-div">
                       {" "}
@@ -86,7 +93,7 @@ const Slider = () => {
                     <p style={{color:"gray"}}>{item.categeory} Originals</p>
                     <p>NEW</p>
                      </div>
-               
+                     <FaRegHeart onClick={()=>handleAddWish(item._id)} style={{position:"relative",left:"270px",bottom:"435px",fontSize:"25px"}}/>
               </div>
             );
           })}

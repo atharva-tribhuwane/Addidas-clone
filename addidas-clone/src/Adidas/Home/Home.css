@@ -8,10 +8,12 @@
   left: 3%;
 }
 
-.div-brutal-video {
+.div-brutal-video-home {
   border: 2px solid black;
   width: 200px;
   height:70px;
+  vertical-align: middle;
+  margin-top: 30px;
 }
 .video-wrapper{
   display:'grid';
@@ -32,18 +34,20 @@
   width:100%;
   height:auto;
 }
-.button-brutal-video {
+.button-brutal-video-home {
   display:flex;
   background-color: black;
   align-items: center;
   color:white;
   border: none;
   display: flex;
-  height:70px;
-  width:200px;
+  height:73px;
+  width:201px;
+  margin-top: -6.5px;
+  margin-left: -4.5px;
 
 }
-.div-underbutton{
+.div-underbutton-home{
   display: flex;
   justify-content: space-between;
   padding: 10px;
@@ -52,10 +56,10 @@
   text-align: center;
 }
 .div-underbutton p{
-font-size: 18px;
-font-weight: 600;
-text-align: center;
-margin-top: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 15px;
 }
 
 .button-brutal-vid a {

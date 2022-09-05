@@ -50,10 +50,10 @@ function Home() {
             <div style={{ color: "white" }}>FIFA WORLD CUP</div>
             <div className="text-wrapper-home-small">2022 tm KITS</div>
           </div>
-          <div className="div-brutal-video">
-            <button className="button-brutal-video">
-              {" "}
-              <div className="div-underbutton">
+          <div className="div-brutal-video-home">
+            <button className="button-brutal-video-home">
+             
+              <div className="div-underbutton-home">
                 <p>SHOP NOW</p>
                 <HiOutlineArrowNarrowRight style={{ fontSize: "30px",marginTop:"10px" }} />
               </div>{" "}
@@ -83,10 +83,10 @@ function Home() {
               time to create new paths.
             </div>
           </div>
-          <div className="div-brutal-video">
-            <button className="button-brutal-video">
-              {" "}
-              <div className="div-underbutton">
+          <div className="div-brutal-video-home">
+            <button className="button-brutal-video-home">
+            
+              <div className="div-underbutton-home">
                 <p>SHOP NOW</p>
                 <HiOutlineArrowNarrowRight style={{ fontSize: "30px",marginTop:"10px" }} />
               </div>{" "}

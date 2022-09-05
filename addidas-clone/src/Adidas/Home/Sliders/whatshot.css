@@ -1,3 +1,35 @@
 .card-main-wrapper-whatshot{
-    width:315px;
+    width:380px;
+}
+.card-img-price-div-video{
+    height:100%;
+
+}
+.viewall-button-whatshot{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height:30px;
+    width:110px;
+    text-decoration: none;
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: 16px;
+    font-weight: 650;
+    letter-spacing: 1px;
+    background: transparent;
+}
+
+.card-other-details-h{
+   
+    height:60px;
+}
+.card-other-details-p{
+    margin-top: -8px;
+    font-size: 19px;
+    height:60px
+    
+}
+.card-main-wrapper-whatshot-img{
+    width:380px;
+    height:200px;
 }

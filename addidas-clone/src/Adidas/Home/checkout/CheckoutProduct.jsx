@@ -2,16 +2,13 @@ import React from "react";
 // import { useStateValue } from '../../context/StateProvider'
 import "./CheckoutProduct.css";
 import axios from 'axios'
-// import StarIcon from '@material-ui/icons/Star';
-import { useDispatch, useSelector } from "react-redux";
-// import { REMOVE_FROM_CART } from '../../redux/action/actionType'
-// import { removeFromCart } from '../../redux/action/action'
+import { ImCross } from "react-icons/im";
+
 
 const CheckoutProduct = ({ id, img, title, price, details }) => {
     const [qty, setQty]=React.useState(1)
-  const dispatch = useDispatch();
-  // const [{ cart }, dispatch] = useStateValue();
-  const cartItems = useSelector((state) => state.cart);
+
+  
   const handleChange=(event) =>{
     setQty(event.target.value);
     console.log(qty)
@@ -19,9 +16,8 @@ const CheckoutProduct = ({ id, img, title, price, details }) => {
  
   const handleDelete= (itemId)=>{
   
-    axios.delete(`https://backend-gamma-vert.vercel.app/pro/${itemId}`)
+    axios.delete(`https://backend-gamma-vert.vercel.app/deletecart/${itemId}`)
    
-
 }
 
   return (
@@ -35,7 +31,7 @@ const CheckoutProduct = ({ id, img, title, price, details }) => {
               <small>₹</small>
               <strong>{qty*price}</strong>
             </p>
-            <button style={{cursor:"pointer"}} onClick={()=>{handleDelete(id)}} >Delete</button> 
+            <ImCross style={{cursor:"pointer"}} onClick={()=>{handleDelete(id)}}  /> 
           </div>
         </div>
         <div>Size:4</div>
