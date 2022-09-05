@@ -1,10 +1,11 @@
 import React from "react";
 import "./Subtotal.css";
-
 import { Link } from "react-router-dom";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
+import { useSelector } from "react-redux";
 
 const Subtotal = ({ total,qty }) => {
+  const totalPrice=useSelector((state)=>state.cart.total)
   return (
     <div style={{ width: "100%",marginBottom:"100px" }}>
       <Link to="./delivery" style={{ border: "none", textDecoration: "none" }}>
@@ -36,7 +37,7 @@ const Subtotal = ({ total,qty }) => {
 
           <div className="order-values">
             <p>{qty} ITEMS</p>
-            <p>{total}</p>
+            <p>{totalPrice}</p>
           </div>
           <div className="order-values">
             <p>DELIVERY</p>
