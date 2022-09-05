@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import Newadd from "./Newadd";
 import "./address.css";
@@ -48,8 +47,7 @@ const Buttonadd = styled.button`
 `;
 
 const CurrAddr = () => {
-  const navigate = useNavigate();
-  const dispatch = useDispatch();
+ 
   const [addr, setAddr] = useState({});
 
   useEffect(() => {
@@ -97,8 +95,7 @@ const CurrAddr = () => {
 };
 
 const Address = () => {
-  const dispatch = useDispatch();
-  const navigate = useNavigate();
+
   const [addr, setAddr] = useState({});
 
   const [isAddrSelected, setIsAddrSelected] = useState(false);

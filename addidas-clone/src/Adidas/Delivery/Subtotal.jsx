@@ -1,15 +1,11 @@
 import React from "react";
 import "./Subtotal.css";
-import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { CgArrowLongRight } from "react-icons/cg";
 
-// import {getCartTotal} from '../../redux/reducer/reducer'
 
 const Subtotal = ({ total }) => {
-  const cartItems = useSelector((state) => state.cart);
-
-  // console.log(cartItems,'crtItem');
+  
   return (
     <div>
      

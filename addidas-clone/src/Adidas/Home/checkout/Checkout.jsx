@@ -1,28 +1,21 @@
 import React from "react";
-import { useSelector, useDispatch } from "react-redux";
 import "./Checkout.css";
 import CheckoutProduct from "./CheckoutProduct";
 import Subtotal from "./Subtotal";
 import axios from 'axios'
-import { ADD } from "../../Redux/Action";
+
 
 
 const Checkout = () => {
 
   const [cartItems, setSlider] = React.useState([]);
-  const [data, setData]=React.useState([])
-  const cartData=useSelector((state)=>state.auth.token)
-  const dispatch = useDispatch();
-  console.log(cartData)
-  
-  React.useEffect(() => {
-  setSlider(cartData)
-  }, []);
+ 
+
  
   const getData = () => {
     axios
       .get("https://backend-gamma-vert.vercel.app/pro", {})
-      .then((res) => setData(res.data.slice(2)))
+      .then((res) => setSlider(res.data.slice(2)))
       .catch((e) => {
         console.log(e);
       });
@@ -41,33 +34,11 @@ const Checkout = () => {
   //   function TotalPrice(price,tonggia){
   //       return Number(price * tonggia).toLocaleString('en-US');
   //   }
-  const handleCart=(item)=>{
-    dispatch(ADD(item))
-   }
+  
 
   return (
     <div className="checkout">
-       {data.map((item, key) => {
-            return (
-              <div className="card-main-wrapper">
-               
-                  <div className="card-img-price-div">
-                    <img src={item.pro_img[0]} alt="Forum Low Shoes" />
-                    <div className="card-price-div">
-                      {" "}
-                      <button>₹{item.price}</button>
-                    </div>
-                  </div>
-                  <div className="card-other-details">
-                    <p style={{fontSize:"20px",letterSpacing:"-0.5px",fontWeight:"350"}}>{item.pro_name}</p>
-                    <p style={{color:"gray"}}>{item.categeory} Originals</p>
-                    <p>NEW</p>
-                    <button  onClick={() => handleCart(item.id)} style={{backgroundColor:"black",color:"white",width:"70px",height:"50px"}}>Add to cart</button>
-                  </div>
-               
-              </div>
-            );
-          })}
+      
       <div className="checkoutLeft">
         <div>
           <p className="checkoutTitle">YOUR BAG</p>

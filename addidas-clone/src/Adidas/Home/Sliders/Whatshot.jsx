@@ -3,27 +3,11 @@ import './whatshot.css'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import ReactPlayer from "react-player";
-import axios from "axios";
-import { Link } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux/es/exports";
-import { ADD } from "../../Redux/Action";
+
+
 const Whatshot = () => {
-  const [slider, setSlider] = useState([]);
 
-  const dispatch = useDispatch();
-  const getData = () => {
-    axios
-      .get("https://backend-gamma-vert.vercel.app/pro", {})
-      .then((res) => setSlider(res.data.slice(2)))
-      .catch((e) => {
-        console.log(e);
-      });
-  };
-
-  useEffect(() => {
-    getData();
-  }, []);
-
+ 
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
@@ -32,7 +16,7 @@ const Whatshot = () => {
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 4.5,
+      items: 4,
       slidesToSlide: 4,
     },
     tablet: {

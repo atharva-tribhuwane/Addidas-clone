@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Address from "./Address";
@@ -22,7 +21,7 @@ const Wrapper = styled.div`
 `;
 
 const Delivery = (props) => {
-  const dispatch = useDispatch();
+
   // const isAddrSelected=useSelector(state=>state.cart.isAddress)
 
   return (

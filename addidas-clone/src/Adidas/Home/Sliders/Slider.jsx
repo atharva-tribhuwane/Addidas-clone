@@ -4,12 +4,11 @@ import "react-multi-carousel/lib/styles.css";
 import "./slider.css";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
-import { ADD } from "../../Redux/Action";
+
 const Slider = () => {
   const [slider, setSlider] = useState([]);
  
-  const dispatch = useDispatch();
+ 
   const getData = () => {
     axios
       .get("https://backend-gamma-vert.vercel.app/pro", {})
@@ -23,9 +22,7 @@ const Slider = () => {
     getData();
   }, []);
 
-  const handleCart=(item)=>{
-   dispatch(ADD(item))
-  }
+ 
  
   const responsive = {
     superLargeDesktop: {
