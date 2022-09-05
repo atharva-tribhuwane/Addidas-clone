@@ -1,7 +1,22 @@
+import axios from "axios";
 import React from "react";
 import styles from "./Details.module.css";
 const Details = ({data}) => {
   console.log("data in details.jsx is",data);
+  const handleAdd = (id) =>{
+    let payLoad = {
+      item:{
+        productid:data,
+        quantity:1
+      }
+      
+
+    }
+      axios.post(`https://backend-naseeb-shah.vercel.app/addcart/${id}`,{
+        body:JSON.stringify(data)
+      })
+
+  }
   return (
     <div className={styles.sidebar_wrapper_26z7B}>
       <div
@@ -101,6 +116,7 @@ const Details = ({data}) => {
           >
             <button
               className={`${styles.gl_cta} ${styles.gl_cta_primary} ${styles.gl_cta_full_width}`}
+              onClick={()=>handleAdd(data._id)}
             >
               <span className={`${styles.gl_cta__content}`}>Add To Bag</span>
             </button>

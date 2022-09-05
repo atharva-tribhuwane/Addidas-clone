@@ -72,7 +72,7 @@ export const Sign=()=> {
           alert(res.message)
         } else {
           alert('User created successfully');
-          navigate("/login")
+          navigate("/")
         }
         // setNameRegister("")
         setEmailRegister("")

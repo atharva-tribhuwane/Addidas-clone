@@ -74,7 +74,7 @@ export const Navbar = () => {
                     <div>
                         <div><Link to="/login"><AiOutlineUser style={{cursor:"pointer"}}/></Link></div>
                         <div><Link to="/wishlist"><BiHeart style={{cursor:"pointer"}}/></Link></div>
-                        <div><Link to="/wishlist"><AiOutlineShopping style={{cursor:"pointer"}}/></Link></div>
+                        <div><Link to="/checkout"><AiOutlineShopping style={{cursor:"pointer"}}/></Link></div>
                     </div>
                 </div>
             </div>

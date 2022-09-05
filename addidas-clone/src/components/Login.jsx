@@ -112,7 +112,7 @@ export const Login = () => {
 
       if (body[i] == "") {
 
-        alert("Enter valid Details")
+        alert("logged in successfully")
 
         return
 
@@ -192,7 +192,7 @@ export const Login = () => {
 
   return (
 
-    <div className='bg-model'>
+    <div className='bg-model' style={{width:"60%", margin:"auto",padding:"2%",boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px"}}>
 
       <div className='container'>
 
@@ -278,7 +278,7 @@ export const Login = () => {
 
             size="lg"
 
-            id="outlined-size-small"
+            id="outlined"
 
             defaultValue="Email*"
 

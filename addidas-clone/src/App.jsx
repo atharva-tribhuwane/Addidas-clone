@@ -14,6 +14,7 @@ import { ChakraProvider } from '@chakra-ui/react';
 import Payment from './components/Payment';
 import Home from './components/Home/Home';
 import { Log1 } from './components/Log1';
+import Checkout from './components/Checkout';
 function App() {
   return (
   
@@ -29,6 +30,7 @@ function App() {
         <Route path="/kids" element={<Kids/>}></Route>
         <Route path="/signup" element={<Sign/>}></Route>
         <Route path="/login" element={<Login/>}></Route>
+        <Route path="/checkout" element={<Checkout/>}></Route>
       </Routes>
       {/* <Wishlist></Wishlist> */}
       {/* <Sign></Sign> */}
