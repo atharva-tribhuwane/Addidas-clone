@@ -48,7 +48,7 @@ const Subtotal = ({ total,qty }) => {
               <p style={{ fontSize: "24px", fontWeight: "500" }}>TOTAL</p>
               <p style={{ marginTop: "-15px" }}>(Inclusive of all taxes)</p>
             </div>
-            <p style={{ fontSize: "24px", fontWeight: "500" }}>{total}</p>
+            <p style={{ fontSize: "24px", fontWeight: "500" }}>{totalPrice}</p>
           </div>
         </div>
       </div>
