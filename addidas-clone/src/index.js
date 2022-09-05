@@ -7,10 +7,12 @@ import {Provider} from "react-redux"
 import { store } from './Adidas/Redux/store';
  const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+   <Provider store = {store}>
   <BrowserRouter>
-  <Provider store = {store}>
+ <React.StrictMode>
+
     <App />
-  </Provider>
+    </React.StrictMode>
   </BrowserRouter>
- 
+  </Provider>
 );

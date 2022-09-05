@@ -10,11 +10,39 @@ import Whatshot from "./Sliders/Whatshot";
 import { Link } from "react-router-dom";
 import Story from "./Story";
 import { Button } from "react-bootstrap";
+import { useSelector,useDispatch } from "react-redux";
 
 function Home() {
+
+  const token=useSelector((state)=>state.auth.token)
+  console.log(token)
+
+const [data,setData]=React.useState([]);
+React.useEffect(() => {
+  setData(token)
+  }, []);
   return (
     <Fragment>
-     
+     {data.map((item, key) => {
+            return (
+              <div className="card-main-wrapper">
+               
+                  <div className="card-img-price-div">
+                    <img src={item.pro_img[0]} alt="Forum Low Shoes" />
+                    <div className="card-price-div">
+                      {" "}
+                      <button>₹{item.price}</button>
+                    </div>
+                  </div>
+                  <div className="card-other-details">
+                    <p style={{fontSize:"20px",letterSpacing:"-0.5px",fontWeight:"350"}}>{item.pro_name}</p>
+                  
+                   
+                     </div>
+               
+              </div>
+            );
+          })}
       <div className="home-wrapper">
         <div>
           <ReactPlayer

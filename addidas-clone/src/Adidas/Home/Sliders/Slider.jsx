@@ -4,15 +4,16 @@ import "react-multi-carousel/lib/styles.css";
 import "./slider.css";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux/es/exports";
-import { productData } from "../../Redux/Action";
+import { useDispatch, useSelector } from "react-redux";
+import { ADD } from "../../Redux/Action";
 const Slider = () => {
   const [slider, setSlider] = useState([]);
+ 
   const dispatch = useDispatch();
   const getData = () => {
     axios
       .get("https://backend-gamma-vert.vercel.app/pro", {})
-      .then((res) => setSlider(res.data))
+      .then((res) => setSlider(res.data.slice(2)))
       .catch((e) => {
         console.log(e);
       });
@@ -21,15 +22,11 @@ const Slider = () => {
   useEffect(() => {
     getData();
   }, []);
-  const handleAdd = (id) => {
-    axios
-      .get(`https://backend-gamma-vert.vercel.app/proid/${id}`, {})
-      .then((res) => dispatch(productData(res.data)))
 
-      .catch((e) => {
-        console.log(e);
-      });
-  };
+  const handleCart=(item)=>{
+   dispatch(ADD(item))
+  }
+ 
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
@@ -79,7 +76,7 @@ const Slider = () => {
           {slider.map((item, key) => {
             return (
               <div className="card-main-wrapper">
-                <Link to={"/product"}>
+               
                   <div className="card-img-price-div">
                     <img src={item.pro_img[0]} alt="Forum Low Shoes" />
                     <div className="card-price-div">
@@ -88,11 +85,11 @@ const Slider = () => {
                     </div>
                   </div>
                   <div className="card-other-details">
-                    <p>{item.pro_name}</p>
-                    <p>{item.categeory}</p>
+                    <p style={{fontSize:"20px",letterSpacing:"-0.5px",fontWeight:"350"}}>{item.pro_name}</p>
+                    <p style={{color:"gray"}}>{item.categeory} Originals</p>
                     <p>NEW</p>
-                  </div>
-                </Link>
+                     </div>
+               
               </div>
             );
           })}

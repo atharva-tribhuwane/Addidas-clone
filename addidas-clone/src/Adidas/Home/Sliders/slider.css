@@ -20,7 +20,7 @@
 }
 .title-wrapper button{
   height:30px;
-  width:100px;
+  width:108px;
   text-decoration: none;
   border: none;
   border-bottom: 2px solid black;
@@ -63,12 +63,15 @@ width:100%;
   border:none;
   background-color: white;
   font-size: 18px;
-  font-weight: 550;
+  font-weight: 450;
+  letter-spacing: 1.5px;
 }
 .card-other-details{
-  padding:10px;
-
+  font-size: 16px;
+  margin-top: 10px;
+padding:15px
 }
 .card-other-details p{
-font-size: 30px;
+font-family: sans-serif;
+margin-top: -5px;
 }

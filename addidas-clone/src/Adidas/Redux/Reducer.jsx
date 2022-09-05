@@ -1,14 +1,23 @@
-import { PRODUCT_DATA } from "./Actiontype";
 
-const initial = [];
-export const reducer = (store=initial,{type,payload})=>{
+import {ADD_CART} from "./Actiontype"
 
-    switch(type){
-        case PRODUCT_DATA:
-            return{...store,
-            data:payload}
+const initialState={
+    token:[]
+}
+
+export const reducer=(state=initialState,{type,payload})=>{
+  switch(type){
+
+    case ADD_CART:
+        return{
+            ...state,
+          token:[...state.token,payload]
             
-        default:
-            return store;
+        }
+       
+        
+       default :
+       return state
+
     }
 }

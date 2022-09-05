@@ -4,7 +4,7 @@ import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 function FooterTop() {
   return (
     <div className="footer-top-yellow">
-      <div style={{marginLeft:"200px",display:"flex"}}>
+      <div style={{marginLeft:"300px",display:"flex",margin:"auto"}}>
       <div className="footer-top-yellow-div">
         {" "}
         <p className="footer-top-yellow-p">JOIN ADIDAS AND GET 15%</p><p className="footer-top-yellow-p"style={{marginTop:"-15px"}}> OFF</p>

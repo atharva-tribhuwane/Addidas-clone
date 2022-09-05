@@ -1,1 +1,1 @@
-export const PRODUCT_DATA = "PRODUCT_DATA";
+export const ADD_CART="ADD_CART";

@@ -9,6 +9,7 @@
 
 .footer-top {
   display: flex;
+  margin: auto;
   padding: 10px 0;
   font-family: 'Helvetica','Arial',sans-serif;;
 }

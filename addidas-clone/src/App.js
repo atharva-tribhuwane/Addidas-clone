@@ -4,7 +4,7 @@ import {Routes,Route} from "react-router-dom"
 import Home from "./Adidas/Home/Home"
 import FinalFoot from './Adidas/Main/Footer/FinalFoot'
 import Men from './Adidas/Home/Sliders/Men';
-import Checkout from './Adidas/checkout/Checkout';
+import Checkout from './Adidas/Home/checkout/Checkout';
 import Delivery from './Adidas/Delivery/Delivery';
 
 function App() {

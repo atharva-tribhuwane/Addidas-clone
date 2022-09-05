@@ -1,8 +1,12 @@
-import { PRODUCT_DATA } from "./Actiontype";
+
+import {ADD_CART} from "./Actiontype"
+
+export const ADD=(item)=>{
+  return {
+      type:ADD_CART,
+      payload:item
+  }
+}
 
 
 
-export const productData = (payload) => ({
-  type: PRODUCT_DATA,
-  payload,
-});
