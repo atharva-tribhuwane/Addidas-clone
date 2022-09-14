@@ -8,6 +8,7 @@ import { Popup } from './Popup';
 import {Link} from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
 export const Navbar = () => {
+    console.log("rendering");
     const [showmen,setShowmen] = React.useState(false);
     const [showwomen,setShowwomen] = React.useState(false);
     const [showkids,setShowkids] = React.useState(false);
@@ -57,7 +58,7 @@ export const Navbar = () => {
                     <img src="https://www.adidas.co.in/glass/react/b857677/assets/img/icon-adidas-logo.svg" alt="" />
                 </div>
                 <div className="nav-links-at">
-                    <span onMouseEnter={()=>setShowmen(true)} onMouseLeave={()=>setShowmen(false)}><Link to="/mens"> MEN</Link></span>
+                    <span onMouseEnter={()=>setShowmen(true)} onMouseLeave={()=>setShowmen(false)}> MEN</span>
                     <span onMouseEnter={()=>setShowwomen(true)} onMouseLeave={()=>setShowwomen(false)}><Link to="/womens"> Womens</Link></span>
                     <span onMouseEnter={()=>setShowkids(true)} onMouseLeave={()=>setShowkids(false)}><Link to="/kids">Kids</Link></span>
                     <span onMouseEnter={()=>setShowsports(true)} onMouseLeave={()=>setShowsports(false)}>SPORTS</span>

@@ -24,7 +24,7 @@ import { FaFacebook } from 'react-icons/fa'
 import { BsArrowRight } from "react-icons/bs"
 
 import { useNavigate } from 'react-router-dom'
-
+import { LoginContext } from '../context/LoginContext';
 
 
 export const Login = () => {
@@ -33,7 +33,7 @@ export const Login = () => {
 
   const [passwordLogin, setPasswordLogin] = React.useState('')
 
-  // const { setUser } = React.useContext(LoginContext)
+  const { userDetails } = React.useContext(LoginContext)
 
   const [cross, setCross] = React.useState(false)
 
@@ -90,6 +90,7 @@ export const Login = () => {
 
     } catch (error) {
 
+      alert(error);
       console.log(error)
 
     }
@@ -108,19 +109,8 @@ export const Login = () => {
 
     }
 
-    for (let i in body) {
+    // console.log("Body is", body)
 
-      if (body[i] == "") {
-
-        alert("logged in successfully")
-
-        return
-
-      }
-
-    }
-
-    // console.log(body)
 
     try {
 
@@ -152,9 +142,11 @@ export const Login = () => {
 
         localStorage.setItem('token', token)
 
-        // setUser(token)
-
-        alert('User logged in successfully')
+        await userDetails(response.id);
+        // userDetails(response.id);
+        alert('User logged in successfully');
+        localStorage.setItem("id",response.id);
+        // navigate("/")
 
       }
 
@@ -192,38 +184,14 @@ export const Login = () => {
 
   return (
 
-    <div className='bg-model' style={{width:"60%", margin:"auto",padding:"2%",boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px"}}>
+    <div className='bg-model' style={{ margin: "auto", padding: "2%", boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px"}}>
 
       <div className='container'>
 
-        <div style={{ width: "430px", margin: "auto" }}>
+        <div style={{ width: "430px", margin: "auto", border: "1px solid red" }}>
 
-          <div style={{ display: "flex", justifyContent: "space-between" }}>
-
-            <p style={{
-
-              textAlign: 'left',
-
-              fontWeight: "bold",
-
-              color: "000000",
-
-              fontSize: "30px",
-
-              margin: "0px",
-
-              fontFamily: 'AdineuePRO, Helvetica, Arial, sans-serif'
-
-            }}
-
-            >
-
-              ENJOY ADICLUB BENEFITS WHEN YOU LOG IN
-
-            </p>
-
-            <ImCross />
-
+          <div style={{ border: "2px solid yellow", fontSize: "28px", fontWeight: "700" }}>
+            ENJOY ADICLUB BENIFITS WHEN YOU LOGIN
           </div>
 
           <div style={{ display: "flex", width: "210px", justifyContent: "space-between" }}>
@@ -252,7 +220,7 @@ export const Login = () => {
 
           <p style={{ fontSize: "18px", textAlign: "left", marginTop: "15px", color: "000000", fontFamily: "AdineuePRO, Helvetica, Arial, sans-serif", fontWeight: "700" }}>LOG IN</p>
 
-          <p style={{ fontSize: "16px", color: "000000", textAlign: "left", fontFamily: "AdineuePRO, Helvetica, Arial, sans-serif" }}>Let's check if you already have an account</p>
+          {/* <p style={{ fontSize: "16px", color: "000000", textAlign: "left", fontFamily: "AdineuePRO, Helvetica, Arial, sans-serif" }}>Let's check if you already have an account</p> */}
 
           <div style={{ display: "flex", flexDirection: "column", width: "100%", justifyContent: "start" }}>
 
@@ -262,29 +230,57 @@ export const Login = () => {
 
               value={emailLogin}
 
-            type={"email"}
+              type={"email"}
 
-            onChange={(e) => {
+              onChange={(e) => {
 
-              setEmailLogin(e.target.value)
+                setEmailLogin(e.target.value)
 
-            }}
+              }}
 
-// color={767677}
+              // color={767677}
 
-            fontFamily={'AdineuePRO, Helvetica, Arial, sans-serif'}
+              fontFamily={'AdineuePRO, Helvetica, Arial, sans-serif'}
 
-            placeholder="Email *"
+              placeholder="Email *"
 
-            size="lg"
+              size="lg"
 
-            id="outlined"
+              
 
-            defaultValue="Email*"
 
-// marginbottom={'100px'}
+            // marginbottom={'100px'}
 
-/></div>
+            />
+            <TextField
+
+              label="Password*"
+
+              value={passwordLogin}
+
+              type={"password"}
+
+              onChange={(e) => {
+
+                setPasswordLogin(e.target.value)
+
+              }}
+
+              // color={767677}
+
+              fontFamily={'AdineuePRO, Helvetica, Arial, sans-serif'}
+
+              placeholder="Password *"
+
+              size="lg"
+
+              
+
+              style={{marginTop:"2%"}}
+            // marginbottom={'100px'}
+
+            />
+          </div>
 
           <div
 
@@ -324,17 +320,18 @@ export const Login = () => {
 
               fontSize: "16px",
 
-              width: "100%",
+              width: "40%",
 
-              fontWeight: "600px"
+              fontWeight: "600px",
 
+              textAlign: "center"
             }}
 
               onClick={handleLogin}
 
             >
 
-              CONTINUE{' '}
+              Signin
 
               {/* <BsArrowRight style={{marginLeft:"300px", width:"0px"}}/> */}
 

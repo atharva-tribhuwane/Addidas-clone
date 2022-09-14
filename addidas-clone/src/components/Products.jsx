@@ -5,11 +5,14 @@ import Filterandsort from './Filterandsort';
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
 import CircularProgress from '@mui/material/CircularProgress';
+import { LoginContext } from "../context/LoginContext";
 export const Products = () => {
     const [Data, setData] = React.useState("");
     const [loading, setLoading] = React.useState(true);
     const [sport, setSport] = React.useState("");
     const [filteredData, setFilteredData] = React.useState("")
+    const { user } = React.useContext(LoginContext);
+    console.log(user);
     const handleoptionChange = (event, param) => {
         // console.log("param is:",param)
         if (param === "sport") {

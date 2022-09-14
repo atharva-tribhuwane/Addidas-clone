@@ -1,31 +1,47 @@
 import axios from "axios";
 import React from "react";
 import styles from "./Details.module.css";
-const Details = ({data}) => {
-  console.log("data in details.jsx is",data);
-  const handleAdd = (id) =>{
+import { useContext } from "react";
+import { LoginContext } from "../context/LoginContext";
+const Details = ({ data }) => {
+  console.log("data in details.jsx is", data[0]);
+  // const {user} = useContext(LoginContext);
+  const { user } = React.useContext(LoginContext);
+
+  console.log("hello user", { user });
+  const handleAdd = (id) => {
+    let userid = localStorage.getItem("id");
+    console.log("user in details is:", user);
     let payLoad = {
-      item:{
-        productid:data,
-        quantity:1
+      cart: {
+        product_id: data[0]._id,
+        product_name: data[0].pro_name,
+        quantity: 1
       }
-      
 
     }
-      axios.post(`https://backend-naseeb-shah.vercel.app/addcart/${id}`,{
-        body:JSON.stringify(data)
-      })
-
+    // axios.post(`https://backend-naseeb-shah.vercel.app/addcart/${userid}`,{
+    //   body:JSON.stringify(data)
+    // })
+    fetch(`https://backend-naseeb-shah.vercel.app/addcart/${userid}`, {
+      method: "POST",
+      body: JSON.stringify(payLoad),
+      headers: {
+        "Content-Type": "application/json"
+      }
+    })
+      .then((res) => res.json())
+      .then((res) => console.log(res));
   }
   return (
     <div className={styles.sidebar_wrapper_26z7B}>
       <div
         class="margin_3dZhS"
-        // style="margin_top: 3065.69px;"
+      // style="margin_top: 3065.69px;"
       ></div>
       <div
         className={styles.sidebar_2C_EP}
-        // style="top: _0.400024px;"
+      // style="top: _0.400024px;"
       >
         <div className={styles.product_description_2cJO2}>
           <div className={styles.pre_header_2xlx4}>
@@ -37,7 +53,7 @@ const Details = ({data}) => {
             className={`${styles.gl_heading} ${styles.gl_heading_regular} ${styles.gl_heading_italic} ${styles.name_1EbZs}`}
           >
             {/* <span>{data[0].pro_name}</span> */}
-            <p style={{color:"000000",fontFamily:"AdihausDIN, Helvetics, Arial,sans-serif", fontSize:"27px",textAlign:"left" ,marginTop:"15px",marginBottom:"15px",fontStyle:"italic", fontWeight:"bold", width:"100%"}}>{data[0].pro_name}</p>
+            <p style={{ color: "000000", fontFamily: "AdihausDIN, Helvetics, Arial,sans-serif", fontSize: "27px", textAlign: "left", marginTop: "15px", marginBottom: "15px", fontStyle: "italic", fontWeight: "bold", width: "100%" }}>{data[0].pro_name}</p>
           </h1>
           <div className={`${styles.product_price_gJhOl} ${styles.gl_vspace}`}>
             <div
@@ -53,7 +69,8 @@ const Details = ({data}) => {
                   <div
                     className={`${styles.gl_price_item} ${styles.notranslate}`}
                   >
-                    ₹{data[0].price}
+                    {/* ₹{data[0].price} */}
+                    {user}
                   </div>
                 </div>
               </div>
@@ -111,12 +128,12 @@ const Details = ({data}) => {
             </a>
           </div>
           <div
-            tabindex="_1"
+            tabIndex="_1"
             className={`${styles.add_to_bag_3wgQk} ${styles.gl_vspace_bpall_medium}`}
           >
             <button
               className={`${styles.gl_cta} ${styles.gl_cta_primary} ${styles.gl_cta_full_width}`}
-              onClick={()=>handleAdd(data._id)}
+              onClick={() => handleAdd(data._id)}
             >
               <span className={`${styles.gl_cta__content}`}>Add To Bag</span>
             </button>

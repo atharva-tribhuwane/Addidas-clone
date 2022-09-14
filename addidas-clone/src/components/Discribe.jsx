@@ -6,7 +6,7 @@ const Discribe = ({img}) => {
       <div
         className={styles.navigation_wrapper_1E4J7}
         id="pdp-navigation"
-        tabindex="-1"
+        tabIndex="-1"
       >
         <nav className={`${styles.navigation_pjBTo} ${styles.ready_iRWm3}`}>
           <div className={`${styles.gl_tab} ${styles.nitin}`}>
@@ -20,7 +20,7 @@ const Discribe = ({img}) => {
               <button className={styles.gl_tab_item}>DETAILS</button>
               <button
                 className={`${styles.gl_tab_item} ${styles.gl_tab_item_active}`}
-                tabindex="0"
+                tabIndex="0"
               >
                 REVIEWS
               </button>

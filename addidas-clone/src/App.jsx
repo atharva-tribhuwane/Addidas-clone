@@ -10,11 +10,11 @@ import {Routes, Route} from "react-router-dom";
 import { Wishlist } from './components/Wishlist';
 import { Sign } from './components/Sign-Login';
 import { Login } from './components/Login';
-import { ChakraProvider } from '@chakra-ui/react';
 import Payment from './components/Payment';
 import Home from './components/Home/Home';
 import { Log1 } from './components/Log1';
 import Checkout from './components/Checkout';
+import { LoginContext, LoginContextProvider } from './context/LoginContext';
 function App() {
   return (
   

@@ -10,7 +10,7 @@ const Recently = () => {
 
   const getData = () => {
     axios
-      .get("https://fake-server-nitin.herokuapp.com/newarrivals", {})
+      .get("https://backend-gamma-vert.vercel.app/pro", {})
       .then((res) => setSlider(res.data))
       .catch((e) => {
         console.log(e);
